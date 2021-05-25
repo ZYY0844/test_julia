@@ -1,5 +1,6 @@
 
 # include("plot_test.jl")
+
 using NOMAD
 
 function s(x)
@@ -15,6 +16,7 @@ function f(w, x)
 end
 
 function eval_fun(x)
+
     w = 0.9
     bb_outputs = [-f(w, x)]
     success = true
