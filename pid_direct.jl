@@ -1,6 +1,6 @@
 using ControlSystems,Measurements, GenericLinearAlgebra,ForwardDiff,NLopt
 using OrdinaryDiffEq, Plots, Interact, Pkg, LinearAlgebra, Statistics
-using DirectSearch
+using DirectSearch, Debugger
 gr(show=false, size=(500, 400)) # Set defaults for plotting
 
 P = tf(1, [2.,1])^2 * tf(1, [0.5,1])  # Process model
@@ -58,22 +58,28 @@ p = DSProblem(3; objective=costfun, initial_point=[0.1, 0.1, 0.1]);
 @time Optimize!(p)
 
 @show p.status
+
 @show p.x
 @show p.x_cost
 
 y = timedomain(p.x)
 plot(t,y')
 
-Ω  = exp10.(LinRange(-1, 2, 150))
-p0 = [0.1,0.1,0.1]
-function freqdomain(p)
-    C     = Kpid(p[1], p[2], p[3])
-    S     = 1 / (1 + P * C) # Sensitivity fun
-    T     = tf(1.) - S# Comp. Sensitivity fun
-    Sw    = vec(bode(S, Ω)[1]) # Freq. domain constraints
-    Tw    = vec(bode(T, Ω)[1]) # Freq. domain constraints
-    Sw, Tw
-end
+# Ω  = exp10.(LinRange(-1, 2, 150))
+# p0 = [0.1,0.1,0.1]
+# function freqdomain(p)
+#     C     = Kpid(p[1], p[2], p[3])
+#     S     = 1 / (1 + P * C) # Sensitivity fun
+#     T     = tf(1.) - S# Comp. Sensitivity fun
+#     Sw    = vec(bode(S, Ω)[1]) # Freq. domain constraints
+#     Tw    = vec(bode(T, Ω)[1]) # Freq. domain constraints
+#     Sw, Tw
+# end
 
-Ms = 1.2 # Maximum sensitivity 
-Mt = 1.5 # Maximum comp. sensitivity
+# Ms = 1.2 # Maximum sensitivity 
+# Mt = 1.5 # Maximum comp. sensitivity
+
+# function constraintfun(p) 
+#     Sw, Tw = freqdomain(p) 
+#     [maximum(Sw) - Ms; maximum(Tw) - Mt] 
+# end
