@@ -16,6 +16,8 @@ end
 
 p = DSProblem(1; objective=f, initial_point=[0.10]);
 
+# cons(x) = x > 0
+# AddProgressiveConstraint(p, cons)
 Optimize!(p)
 
 @show p.status

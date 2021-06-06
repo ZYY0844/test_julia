@@ -10,7 +10,7 @@ end
 function f(w, x)
     Taka = 0;
     for n in 1:100
-        Taka += w^n * s(2^n * x[1]) 
+        Taka += w^n * s(2^n * x[1])
     end
     return Taka
 end
