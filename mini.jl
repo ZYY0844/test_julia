@@ -33,5 +33,12 @@ pb = NomadProblem(1, # number of inputs of the blackbox
                   upper_bound=[0.25],
                 #   min_mesh_size=[1e-9]
                   )
+pb.options.display_degree=3
+# pb.options.opportunistic_eval = false
+#         pb.options.quad_model_search = false
+#         pb.options.nm_search = false
+#         pb.options.sgtelib_search = false
+#         pb.options.speculative_search = false
+
 
 result = NOMAD.solve(pb, [0.14])

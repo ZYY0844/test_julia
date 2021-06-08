@@ -1,28 +1,18 @@
-using NLopt
-function myfunc(x::Vector, grad::Vector)
-    if length(grad) > 0
-        grad[1] = 0
-        grad[2] = 0.5 / sqrt(x[2])
-    end
-    return sqrt(x[2])
-end
+using DirectSearch
 
-function myconstraint(x::Vector, grad::Vector, a, b)
-    if length(grad) > 0
-        grad[1] = 3a * (a * x[1] + b)^2
-        grad[2] = -1
-    end
-    (a * x[1] + b)^3 - x[2]
-end
+p = DSProblem(3);
+obj(x) = x'*[2 1;1 4]*x;
+p = DSProblem(2; objective=obj, initial_point=[4,2.3]);
 
-opt = Opt(:LD_MMA, 2)
-opt.lower_bounds = [-Inf, 0.]
-opt.xtol_rel = 1e-4
+p = DSProblem(2)
+SetInitialPoint(p, [1.0,2.0])
+SetObjective(p,obj)
+SetIterationLimit(p, 500)
 
-opt.min_objective = myfunc
-inequality_constraint!(opt, (x, g) -> myconstraint(x, g, 2, 0), 1e-8)
-inequality_constraint!(opt, (x, g) -> myconstraint(x, g, -1, 1), 1e-8)
 
-(minf, minx, ret) = NLopt.optimize(opt, [1.234, 5.678])
-numevals = opt.numevals # the number of function evaluations
-println("got $minf at $minx after $numevals iterations (returned $ret)")
+# cons(x) = x[1] < 1.5 #Constrains x[1] to be larger than 0
+# AddExtremeConstraint(p, cons)
+Optimize!(p)
+
+@show p.x
+@show p.x_cost
