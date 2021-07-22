@@ -18,36 +18,50 @@ Kpid(kp,ki,kd) = pid(kp=kp, ki=ki, kd=kd)
 Kpid(p)        = K(p...)
 ref=4
 function timedomain(p)
-
     C     = Kpid(p[1], p[2], p[3])
     L     = feedback(P * C) |> ss
     s     = Simulator(L, (x, t) -> [ref]) # Sim. unit step load disturbance
     ty    = eltype(p) # So that all inputs to solve have same numerical type (ForwardDiff.Dual)
-    # x0    = zeros(L.nx) .|> ty
+    x0    = ones(L.nx) .|> ty
     tspan = (ty(0.), ty(Tf))
-    sol   = solve(s, [0,0,1,1], tspan)
+    sol   = solve(s, x0, tspan)
     y     = L.C * sol(t) # y = C*x
     y
 end
 
-function costfun_DS(p)
-    y(p) = timedomain(p)
-    f_DS(p)=mean(abs, ref .- y(p))  # ~ Integrated absolute error IAE
-    return [f_DS]
+function costfun(p)
+    y = timedomain(p)
+    mean(abs, ref .- y) # ~ Integrated absolute error IAE
 end
 
+#
+f_cfg = ForwardDiff.GradientConfig(costfun, p)
 
-DSp=DS.DSProblem(3; objective = costfun_DS, initial_point = [0.1, 0.1, 0.1],iteration_limit=10000, full_output = false);
-Optimize!(DSp)
-@show DSp.x
-@show DSp.x_cost
-@show costfun(DSp.x)
-y = timedomain(DSp.x)
+function f(p::Vector, grad::Vector)
+    if length(grad) > 0
+        grad .= ForwardDiff.gradient(costfun, p, f_cfg)
+    end
+    costfun(p)
+end
+
+function runopt(p; f_tol=1e-5, x_tol=1e-3)
+    opt = Opt(:LD_AUGLAG, 3)
+    lower_bounds!(opt, 1e-6ones(3))
+    xtol_rel!(opt, x_tol)
+    ftol_rel!(opt, f_tol)
+
+    min_objective!(opt, f)
+    NLopt.optimize(opt, p)[2]
+end
+
+@info "Starting Optimization"
+@time p = runopt(p, x_tol=1e-6)
+println(p)
+@show costfun(p)
+
+y = timedomain(p)
 display(plot(t,y'))
 
-#
-# C     = Kpid(DSp.x...)
-# gangoffourplot(P,C, exp10.(LinRange(-1,3,500)), legend=false)
 
 
 #
