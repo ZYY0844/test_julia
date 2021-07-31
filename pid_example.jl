@@ -1,31 +1,38 @@
 using ControlSystems, OrdinaryDiffEq, Plots, Interact, Pkg, LinearAlgebra, Statistics,Debugger,Infiltrator
+using NLopt, ForwardDiff,DirectSearch
 gr(show=false, size=(500, 400)) # Set defaults for plotting
 
 P              = tf(1, [2.,1])^2 * tf(1, [0.5,1])  # Process model
+# P = tf(1, [1, 200])
 h              = 0.1             # Sample time (only used for plots)
-Ps             = ss(P);          # State-space representation of process model
+# Ps             = ss(P);          # State-space representation of process model
 
-s      = Simulator(Ps)
+# s      = Simulator(Ps)
 x0     = [0.,0,0] # Initial state
-Tf     = 60             # Length of experiments (seconds)
+Tf     = 50           # Length of experiments (seconds)
 t      = 0:h:Tf          # Time vector
 tspan  = (0.0, Tf)
 
-using NLopt, ForwardDiff,DirectSearch
+
 p              = [0.1, 0.1, 0.1] # Initial guess [kp, ki, kd]
 
 Kpid(kp,ki,kd) = pid(kp=kp, ki=ki, kd=kd)
 Kpid(p)        = K(p...)
 ref=4
+
+function ff(x,t)
+    return [ref]
+end
+
 function timedomain(p)
 
     C     = Kpid(p[1], p[2], p[3])
     L     = feedback(P * C) |> ss
-    s     = Simulator(L, (x, t) -> [ref]) # Sim. unit step load disturbance
+    s     = Simulator(L, ff) # Sim. unit step load disturbance
     ty    = eltype(p) # So that all inputs to solve have same numerical type (ForwardDiff.Dual)
-    # x0    = zeros(L.nx) .|> ty
+    x0    = 1 .* ones(L.nx) .|> ty
     tspan = (ty(0.), ty(Tf))
-    sol   = solve(s, [0,0,1,1], tspan)
+    sol   = solve(s, x0, tspan)
     y     = L.C * sol(t) # y = C*x
     y
 end
@@ -35,9 +42,12 @@ function costfun_DS(p)
     f_DS(p)=mean(abs, ref .- y(p))  # ~ Integrated absolute error IAE
     return [f_DS]
 end
+function costfun(p)
+    y = timedomain(p)
+    mean(abs, ref .- y) # ~ Integrated absolute error IAE
+end
 
-
-DSp=DS.DSProblem(3; objective = costfun_DS, initial_point = [0.1, 0.1, 0.1],iteration_limit=10000, full_output = false);
+@time DSp=DS.DSProblem(3; objective = costfun_DS, initial_point = [0.1, 0.1, 0.1],iteration_limit=10000, full_output = false);
 Optimize!(DSp)
 @show DSp.x
 @show DSp.x_cost

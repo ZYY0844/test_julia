@@ -16,7 +16,7 @@ p              = [0.1, 0.1, 0.1] # Initial guess [kp, ki, kd]
 
 Kpid(kp,ki,kd) = pid(kp=kp, ki=ki, kd=kd)
 Kpid(p)        = K(p...)
-ref=4
+ref=2
 function timedomain(p)
     C     = Kpid(p[1], p[2], p[3])
     L     = feedback(P * C) |> ss

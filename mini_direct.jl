@@ -36,6 +36,8 @@ f2(x) = (x[2]-2).^2 + 20. + (x[1]+1).^2
 # f3(x)=(1-x[1])
 return [f1,f2]
 end
+
+
 # test1.f1([1,2])
 
 function ex005(x)
@@ -49,7 +51,7 @@ obj3(x)= (x[1] + 2) .^ 2  - 10.0
 f_reform(x)=phi(obj,obj2, [1.,1.], x)
 
 
-p = DSProblem(2; objective=ex005, initial_point=[1.,0.],iteration_limit=1000,full_output=false);
+p = DSProblem(2; objective=test1, initial_point=[1.,0.],iteration_limit=1000,full_output=false);
 # AddStoppingCondition(p, HypervolumeStoppingCondition(1.2))
 # p = DSProblem(1; objective=f, initial_point=[-7.5],full_output=true);
 # SetFunctionEvaluationLimit(p,1000000)
@@ -58,11 +60,11 @@ p = DSProblem(2; objective=ex005, initial_point=[1.,0.],iteration_limit=1000,ful
 # AddExtremeConstraint(p, cons1)
 # cons2(x) = x[1] <-5
 # AddExtremeConstraint(p, cons2)
-function p_MADS(p::DSProblem)
-    x = zeros(Float64, p.N)
-    f= p.objective(x)
-    SetObjective(p, f[1])
-end
+# function p_MADS(p::DSProblem)
+#     x = zeros(Float64, p.N)
+#     f= p.objective(x)
+#     SetObjective(p, f[1])
+# end
 
 # p_MADS(p)
 
