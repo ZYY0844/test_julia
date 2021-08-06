@@ -7,7 +7,7 @@ Ps             = ss(P);          # State-space representation of process model
 
 s      = Simulator(Ps)
 x0     = [0.,0,0] # Initial state
-Tf     = 60             # Length of experiments (seconds)
+Tf     = 20             # Length of experiments (seconds)
 t      = 0:h:Tf          # Time vector
 tspan  = (0.0, Tf)
 
@@ -16,13 +16,13 @@ p              = [0.1, 0.1, 0.1] # Initial guess [kp, ki, kd]
 
 Kpid(kp,ki,kd) = pid(kp=kp, ki=ki, kd=kd)
 Kpid(p)        = K(p...)
-ref=2
+ref=1
 function timedomain(p)
     C     = Kpid(p[1], p[2], p[3])
     L     = feedback(P * C) |> ss
     s     = Simulator(L, (x, t) -> [ref]) # Sim. unit step load disturbance
     ty    = eltype(p) # So that all inputs to solve have same numerical type (ForwardDiff.Dual)
-    x0    = ones(L.nx) .|> ty
+    x0    = zeros(L.nx) .|> ty
     tspan = (ty(0.), ty(Tf))
     sol   = solve(s, x0, tspan)
     y     = L.C * sol(t) # y = C*x

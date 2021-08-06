@@ -10,19 +10,19 @@ Revise.track(DirectSearch)
 # using Plots
 # using Gadfly
 # using GR
-function s(x)
-    return abs(floor(x + 1 / 2) - x)
-end
-
-function f(x::Vector{Float64},test=6)
-    Taka = 0
-    w = 0.9
-    test=4
-    for n in 1:100
-        Taka -= w^n * s(2^n * x[1])
-    end
-    return Taka
-end
+# function s(x)
+#     return abs(floor(x + 1 / 2) - x)
+# end
+#
+# function f(x::Vector{Float64},test=6)
+#     Taka = 0
+#     w = 0.9
+#     test=4
+#     for n in 1:100
+#         Taka -= w^n * s(2^n * x[1])
+#     end
+#     return Taka
+# end
 
 function phi(f1::Function,f2::Function, r::Vector{Float64}, x::Vector{Float64})
 
@@ -36,15 +36,15 @@ end
 function test1(x)
 f1(x) = (x[1]+2).^2 - 10. + (x[2]-3).^2
 f2(x) = (x[2]-2).^2 + 20. + (x[1]+1).^2
-# f3(x)=(1-x[1])
-return [f1,f2]
+# f3(x)=f(x)+f2(x)
+return [f1, f2]
 end
 
 function test_easy(x)
 f1(x) = (x[1]+2).^2 - 10.
 f2(x) = (x[1]-2).^2 + 20.
 # f3(x)=(1-x[1])
-return [f1,f2]
+return [f1]
 end
 
 # test1.f1([1,2])
@@ -59,14 +59,15 @@ obj2(x) = (x[1] + 1) .^ 2 +(x[2] - 4) .^ 4
 obj3(x)= (x[1] + 2) .^ 2  - 10.0
 f_reform(x)=phi(obj,obj2, [1.,1.], x)
 
-
-p = DSProblem(2; objective=test_easy, initial_point=[0.51,0.51],iteration_limit=1000,full_output=false);
-# AddStoppingCondition(p, HypervolumeStoppingCondition(1.2))
 # p = DSProblem(1; objective=f, initial_point=[-7.5],full_output=true);
-# SetFunctionEvaluationLimit(p,1000000)
+p = DSProblem(2; objective=test_easy, initial_point=[0.51,0.51],iteration_limit=100000,full_output=false);
+# AddStoppingCondition(p, HypervolumeStoppingCondition(0.0001))
+# AddStoppingCondition(p, RuntimeStoppingCondition(3.5))
+SetFunctionEvaluationLimit(p,1000000)
+
 # SetVariableRange(p,1,0.,0.19)
 # cons1(x) = x[1] > -10.
-# AddExtremeConstraint(p, cons1)
+# AddExtremeConstraint(p, cons1)q
 # cons2(x) = x[1] <-5
 # AddExtremeConstraint(p, cons2)
 # function p_MADS(p::DSProblem)
@@ -89,13 +90,13 @@ result=Optimize!(p)
 # @show p.x
 # @show p.x_cost
 # @show p.status.iteration
-@show paretoCoverage(result)
-@show hvIndicator(result)
-fig=scatter()
-for i in 1:length(result)
-    fig=scatter!([result[i].cost[1]],[result[i].cost[2]],color=logocolors.red,legend = false)
-end
-display(fig)
+# @show paretoCoverage(result)
+# @show hvIndicator(result)
+# fig=scatter()
+# for i in 1:length(result)
+#     fig=scatter!([result[i].cost[1]],[result[i].cost[2]],color=logocolors.red,legend = false)
+# end
+# display(fig)
 
 function pareto_front(points, minimize = true)
     cmp_strict = minimize ? (<) : (>);
