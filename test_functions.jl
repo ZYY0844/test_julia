@@ -33,7 +33,7 @@ f2(x) = (x[1]-2).^2 + 20.
 return [f1]
 end
 
-function discontiguous_test(x)
+function discontinuous_test(x)
     m=30
     f1(x)=x[1]
     g(x)=1+9 .* sum((x[2:m] ./ (collect(2:m) .- 1)))

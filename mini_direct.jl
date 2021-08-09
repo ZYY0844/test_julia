@@ -44,7 +44,7 @@ function test_easy(x)
 f1(x) = (x[1]+2).^2 - 10.
 f2(x) = (x[1]-2).^2 + 20.
 # f3(x)=(1-x[1])
-return [f1]
+return [f1, f2]
 end
 
 # test1.f1([1,2])
@@ -60,7 +60,7 @@ obj3(x)= (x[1] + 2) .^ 2  - 10.0
 f_reform(x)=phi(obj,obj2, [1.,1.], x)
 
 # p = DSProblem(1; objective=f, initial_point=[-7.5],full_output=true);
-p = DSProblem(2; objective=test_easy, initial_point=[0.51,0.51],iteration_limit=100000,full_output=false);
+p = DSProblem(2; objective=test_easy, initial_point=[0.51,0.51],iteration_limit=1000,full_output=false);
 # AddStoppingCondition(p, HypervolumeStoppingCondition(0.0001))
 # AddStoppingCondition(p, RuntimeStoppingCondition(3.5))
 SetFunctionEvaluationLimit(p,1000000)
@@ -86,6 +86,7 @@ SetFunctionEvaluationLimit(p,1000000)
 # testbi(p)
 # p_dim(p)
 result=Optimize!(p)
+# @show result[:].x_now
 # @show p.status
 # @show p.x
 # @show p.x_cost
