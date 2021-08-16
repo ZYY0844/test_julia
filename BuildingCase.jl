@@ -1,6 +1,7 @@
 using ControlSystems, DirectSearch, Plots, LinearAlgebra, Statistics
 using DataFrames,CSV
 Revise.track(DirectSearch)
+logocolors = Colors.JULIA_LOGO_COLORS
 gr(show = false, size = (500, 400)) # Set defaults for plotting
 
 # Data Preparation
@@ -22,7 +23,7 @@ h=900                # Sample time (only used for plots)
 h=0.1
 # Tf     = 18143100            # Length of experiments (seconds)
 # Tf     = 900*2
-Tf=3000
+Tf=5000
 # Tf=500
 t      = 0:h:Tf          # Time vector
 tspan  = (0.0, Tf)
@@ -69,7 +70,7 @@ function Tref(p)
     x0    = zeros(L.nx) .|> ty
     x0[1] = 20.
     tspan = (ty(0.), ty(Tf))
-    sol   = solve(s, x0, tspan)
+    sol   = solve(s, x0, tspan,maxiters=Int(1e7))
     y     = L.C * sol(t) # y = C*x
     y
 end
@@ -83,7 +84,7 @@ function Tdis(p)
     # x0    =  0.5 .* ones(L.nx) .|> ty
      x0    =  zeros(L.nx) .|> ty
     tspan = (ty(0.), ty(Tf))
-    sol   = solve(s, x0, tspan)
+    sol   = solve(s, x0, tspan,solver=Rosenbrock23(),maxiters=Int(1e7))
     y     = L.C * sol(t) # y = C*x
     y
 end
@@ -112,9 +113,7 @@ function costfun(p)
 end
 
 function costfun_test(p)
-    y_ref(p) = Tref(p)
-    y_dis(p) = Tdis(p)
-    f_DS(p)=mean(abs, ref .- (y_ref(p) .+ y_dis(p)))  # ~ Integrated absolute error IAE
+    f_DS(p)=mean(abs, ref .- (Tref(p) .+ Tdis(p)))  # ~ Integrated absolute error IAE
     return [f_DS]
 end
 
@@ -124,25 +123,30 @@ function bi_test(p)
     return [IAE, sen]
 end
 
-# DSp=DS.DSProblem(3; objective = costfun_DS, initial_point = p_init,iteration_limit=10, full_output = true);
+DSp=DS.DSProblem(3; objective = costfun_DS, initial_point = p_init,iteration_limit=10, full_output = true);
 # DSp=DS.DSProblem(3; objective = sensitivity, initial_point = p_init,iteration_limit=60, full_output = true);
-# DSp=DS.DSProblem(3; objective = bi_test, initial_point = p_init,iteration_limit=1000, full_output = true);
-DSp=DS.DSProblem(3; objective = costfun_test, initial_point = p_init,iteration_limit=10, full_output = true);
+# DSp=DS.DSProblem(3; objective = bi_test, initial_point = p_init,iteration_limit=100, full_output = true);
+# DSp=DS.DSProblem(3; objective = costfun_test, initial_point = p_init,iteration_limit=13, full_output = true);
 @time result=Optimize!(DSp)
+# @show DSp.x=[2.6, 0.78, 0.020000000000000007]
 @show DSp.x
 @show DSp.x_cost
-# @show result.x_now
+@show result
 # @show costfun(DSp.x)
 # y = Tref(DSp.x)
 # y = Tdis(DSp.x)
-y = Tref(DSp.x) .+ Tdis(DSp.x)
+@time y = @time Tref(DSp.x) .+ Tdis(DSp.x)
 
 @show y[1:20]
 display(plot(t,y'))
-# bodeplot(P)
+
+# C     = Kpid(0.1,0.1,0.1)
+# L     = P/(1 + P * C) |> ss
+# bodeplot(L)
+@show sensitivity(DSp.x)
 
 # fig=scatter()
-# for i in 1:length(result)
+# for i in 1:length(result)-1
 #     fig=scatter!([result[i].cost[1]],[result[i].cost[2]],color=logocolors.red,legend = false)
 # end
 # display(fig)

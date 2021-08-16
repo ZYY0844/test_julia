@@ -60,7 +60,7 @@ obj3(x)= (x[1] + 2) .^ 2  - 10.0
 f_reform(x)=phi(obj,obj2, [1.,1.], x)
 
 # p = DSProblem(1; objective=f, initial_point=[-7.5],full_output=true);
-p = DSProblem(2; objective=test_easy, initial_point=[0.51,0.51],iteration_limit=1000,full_output=false);
+p = DSProblem(2; objective=test1, initial_point=[0.51,0.51],iteration_limit=10000,full_output=false);
 # AddStoppingCondition(p, HypervolumeStoppingCondition(0.0001))
 # AddStoppingCondition(p, RuntimeStoppingCondition(3.5))
 SetFunctionEvaluationLimit(p,1000000)
@@ -93,11 +93,11 @@ result=Optimize!(p)
 # @show p.status.iteration
 # @show paretoCoverage(result)
 # @show hvIndicator(result)
-# fig=scatter()
-# for i in 1:length(result)
-#     fig=scatter!([result[i].cost[1]],[result[i].cost[2]],color=logocolors.red,legend = false)
-# end
-# display(fig)
+fig=scatter()
+for i in 1:length(result)
+    fig=scatter!([result[i].cost[1]],[result[i].cost[2]],color=logocolors.red,legend = false)
+end
+display(fig)
 
 function pareto_front(points, minimize = true)
     cmp_strict = minimize ? (<) : (>);

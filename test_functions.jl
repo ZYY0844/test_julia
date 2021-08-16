@@ -33,7 +33,7 @@ f2(x) = (x[1]-2).^2 + 20.
 return [f1]
 end
 
-function discontinuous_test(x)
+function DT1(x)
     m=30
     f1(x)=x[1]
     g(x)=1+9 .* sum((x[2:m] ./ (collect(2:m) .- 1)))
@@ -44,7 +44,7 @@ end
 
 
 # p = DSProblem(1; objective=test_easy, initial_point=[-7.5],full_output=false);
-p = DSProblem(30; objective=discontiguous_test,initial_point=ones(30)./2, iteration_limit=1000000,full_output=false);
+p = DSProblem(30; objective=DT1,initial_point=ones(30)./2, iteration_limit=1000000,full_output=false);
 # p = DSProblem(2; objective=discontiguous_test, initial_point=[0.51,0.51],iteration_limit=1000,full_output=false);
 # AddStoppingCondition(p, HypervolumeStoppingCondition(0.001))
 # AddStoppingCondition(p, RuntimeStoppingCondition(3.5))
