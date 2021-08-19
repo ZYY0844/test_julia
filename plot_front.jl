@@ -37,4 +37,5 @@ fig=scatter()
 for i in 1:row
     fig=scatter!([result[i,1]],[result[i,2]],color=logocolors.blue,legend = false)
 end
+
 display(fig)

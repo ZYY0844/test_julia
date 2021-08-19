@@ -106,13 +106,13 @@ print(madsI.cache.data)
 print(madsI.barrier.bestFeasiblePoints)
 result = collect(values(madsI.barrier.bestFeasiblePoints))
 
-# fig = scatter()
-# for i = 1:length(result)
-#     fig = scatter!(
-#         [result[i].f[1]],
-#         [result[i].f[2]],
-#         color = logocolors.red,
-#         legend = false,
-#     )
-# end
-# display(fig)
+fig = scatter()
+for i = 1:length(result)
+    fig = scatter!(
+        [result[i].f[1]],
+        [result[i].f[2]],
+        color = logocolors.red,
+        legend = false,
+    )
+end
+display(fig)
