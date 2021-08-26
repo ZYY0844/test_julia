@@ -11,17 +11,17 @@ Revise.track(DirectSearch)
 #     return (0. <=x[2]<=0.4)*(4-3*(exp(-(x[2]-0.2)/0.02))^2)+(0.4 <x[2]<=1)*(4-2*(exp(-(x[2]-0.7)/0.2))^2)
 # end
 
-function cvx2(x)
+function nuni2(x)
     # m=10
-    f1(x)=(4* x[1])
-    # f1(x)=1-exp(-4*x[1])*(sin(5*pi*x[1]))^4
+    f1(x)=1-exp(-4*x[1])*(sin(5*pi*x[1]))^4
+
     g(x)=(x[2]<= 0.4)*(4-3*exp(-((x[2]-0.2)/0.02)^2))+(x[2]> 0.4)*(4-2*exp(-((x[2]-0.7)/0.2)^2))
-    h(x)= (f1(x)<=g(x))*(1-(f1(x)/g(x))^0.25)+0
+    h(x)= (f1(x)<=g(x))*(1-(f1(x)/g(x))^4)+0
     f2(x)=g(x)*h(x)
     return [f1,f2]
 end
 
-p = DSProblem(2; objective=cvx2,initial_point=[0.1,0.8], iteration_limit=100000,full_output=false);
+p = DSProblem(2; objective=nuni2,initial_point=[0.5,0.5], iteration_limit=100000,full_output=false);
 # AddStoppingCondition(p, HypervolumeStoppingCondition(1.4464))
 # AddStoppingCondition(p, RuntimeStoppingCondition(3.5))
 SetFunctionEvaluationLimit(p,10000000)
@@ -56,4 +56,4 @@ end
 
 plot!(fig,xlabel="f1 cost",ylabel="f2 cost")
 display(fig)
-# savefig(fig, "./test_functions/pareto_result/cvx2.pdf")
+# savefig(fig, "./test_functions/pareto_result/nuni2.pdf")

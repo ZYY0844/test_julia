@@ -53,9 +53,9 @@ result=Optimize!(p)
 # @show hvIndicator(result)
 fig=scatter()
 for i in 1:length(result)
-    fig=scatter!([result[i].cost[1]],[result[i].cost[2]],color=logocolors.red,legend = false)
+    fig=scatter!([result[i].cost[1]],[result[i].cost[2]],color=logocolors.red,legend = false,poll=OrthoMADS())
 end
 
 plot!(fig,xlabel="f1 cost",ylabel="f2 cost")
 display(fig)
-savefig(fig, "./test_functions/pareto_result/dt2.pdf")
+# savefig(fig, "./test_functions/pareto_result/dt2.pdf")

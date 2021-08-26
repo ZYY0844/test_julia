@@ -46,13 +46,7 @@ function mmod(x)
 end
 
 
-
-# p = DSProblem(1; objective=test_easy, initial_point=[-7.5],full_output=false);
 p = DSProblem(30; objective=DT1,initial_point=ones(30)./2, iteration_limit=1000000,full_output=false);
-# p = DSProblem(10; objective=DT1,initial_point=ones(10)./2, iteration_limit=1000000,full_output=false);
-# p = DSProblem(2; objective=discontiguous_test, initial_point=[0.51,0.51],iteration_limit=1000,full_output=false);
-# AddStoppingCondition(p, HypervolumeStoppingCondition(1.4464))
-# AddStoppingCondition(p, RuntimeStoppingCondition(3.5))
 SetFunctionEvaluationLimit(p,10000000)
 
 # SetVariableRange(p,1,0.,0.19)
@@ -66,18 +60,8 @@ end
 # cons2(x) = -5. < x[2:30] <5.
 # AddExtremeConstraint(p, cons2)
 
-# AddStoppingCondition(p, ButtonStoppingCondition("quit"))
-# SetIterationLimit(p,2)
-# AddStoppingCondition(p, RuntimeStoppingCondition(0.01))
-# SetRuntimeLimit(p, 0.2)
-
 result=Optimize!(p)
-# @show p.status
-# @show p.x
-# @show p.x_cost
-# @show p.status.iteration
-# @show paretoCoverage(result)
-# @show hvIndicator(result)
+
 fig=scatter()
 for i in 1:length(result)
     fig=scatter!([result[i].cost[1]],[result[i].cost[2]],color=logocolors.red,legend = false)

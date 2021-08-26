@@ -23,10 +23,10 @@ end
  #     @show f2([06,i])
  # end
 
-p = DSProblem(2; objective=bias,initial_point=[0.51,0.51], iteration_limit=100000,full_output=false);
+p = DSProblem(2; objective=bias,initial_point=[0.51,0.51], iteration_limit=1000000,full_output=false);
 # AddStoppingCondition(p, HypervolumeStoppingCondition(1.4464))
 # AddStoppingCondition(p, RuntimeStoppingCondition(3.5))
-SetFunctionEvaluationLimit(p,10000000)
+SetFunctionEvaluationLimit(p,100000000)
 
 # SetVariableRange(p,1,0.,0.19)
 # cons1(x) = 0. < x[1] < 1.
@@ -58,4 +58,4 @@ end
 
 plot!(fig,xlabel="f1 cost",ylabel="f2 cost")
 display(fig)
-savefig(fig, "./test_functions/pareto_result/bias2.pdf")
+# savefig(fig, "./test_functions/pareto_result/bias.pdf")

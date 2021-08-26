@@ -14,8 +14,8 @@ function mmod(x)
     return [f1,f2]
 end
 
-p = DSProblem(10; objective=mmod,initial_point=ones(10)./2, iteration_limit=10000,full_output=false);
-# AddStoppingCondition(p, HypervolumeStoppingCondition(1.4464))
+p = DSProblem(10; objective=mmod,initial_point=ones(10)./2, iteration_limit=100000,full_output=false);
+# AddStoppingCondition(p, HypervolumeStoppqingCondition(1.4464))
 # AddStoppingCondition(p, RuntimeStoppingCondition(3.5))
 SetFunctionEvaluationLimit(p,10000000)
 

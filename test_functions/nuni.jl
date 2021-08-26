@@ -49,4 +49,4 @@ end
 
 plot!(fig,xlabel="f1 cost",ylabel="f2 cost")
 display(fig)
-savefig(fig, "./test_functions/pareto_result/mmod_1.pdf")
+# savefig(fig, "./test_functions/pareto_result/nuni1.pdf")

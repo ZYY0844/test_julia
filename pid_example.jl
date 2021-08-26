@@ -1,5 +1,5 @@
-using ControlSystems, OrdinaryDiffEq, Plots, Interact, Pkg, LinearAlgebra, Statistics,Debugger,Infiltrator
-using NLopt, ForwardDiff,DirectSearch
+using ControlSystems, OrdinaryDiffEq, Plots, Interact, Pkg, LinearAlgebra, Statistics
+using DirectSearch
 gr(show=false, size=(500, 400)) # Set defaults for plotting
 
 P              = tf(1, [2.,1])^2 * tf(1, [0.5,1])  # Process model
@@ -47,7 +47,7 @@ function costfun(p)
     mean(abs, ref .- y) # ~ Integrated absolute error IAE
 end
 
-@time DSp=DS.DSProblem(3; objective = costfun_DS, initial_point = [0.1, 0.1, 0.1],iteration_limit=10000, full_output = false);
+@time DSp=DS.DSProblem(3; objective = costfun_DS, initial_point = [0.1, 0.1, 0.1],iteration_limit=1000, full_output = false);
 Optimize!(DSp)
 @show DSp.x
 @show DSp.x_cost
