@@ -37,7 +37,12 @@ function test1(x)
 f1(x) = (x[1]+2).^2 - 10. + (x[2]-3).^2
 f2(x) = (x[2]-2).^2 + 20. + (x[1]+1).^2
 # f3(x)=f(x)+f2(x)
-return [f1, f2]
+f1(x) = (-2 * exp(15*(-(x[1]- 0.1)^2 - x[2]^2))
+- exp(20 * (-(x[1] -0.6)^2 - (x[2] -0.6)^2))
++ exp(20 * (-(x[1] +0.6)^2 - (x[2] -0.6)^2))
++ exp(20 * (-(x[1] -0.6)^2 - (x[2] +0.6)^2))
++ exp(20 * (-(x[1] +0.6)^2 - (x[2] +0.6)^2)))
+return [f1]
 end
 
 function test_easy(x)
@@ -60,9 +65,9 @@ obj3(x)= (x[1] + 2) .^ 2  - 10.0
 f_reform(x)=phi(obj,obj2, [1.,1.], x)
 
 # p = DSProblem(1; objective=f, initial_point=[-7.5],full_output=true);
-p = DSProblem(2; objective=test1, initial_point=[0.51,0.51],iteration_limit=30,full_output=false);
-AddStoppingCondition(p, HypervolumeStoppingCondition(1.745))
-AddStoppingCondition(p, RuntimeStoppingCondition(0.4))
+p = DSProblem(2; objective=test1, initial_point=[0.,0.],iteration_limit=30000,full_output=false);
+# AddStoppingCondition(p, HypervolumeStoppingCondition(1.745))
+# AddStoppingCondition(p, RuntimeStoppingCondition(0.4))
 SetFunctionEvaluationLimit(p,100000)
 
 # SetVariableRange(p,1,0.,0.19)

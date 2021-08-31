@@ -26,7 +26,7 @@ end
 p = DSProblem(m; objective=F1,initial_point=zeros(m) ./2, iteration_limit=100000,full_output=false);
 # AddStoppingCondition(p, HypervolumeStoppingCondition(4.13))
 # AddStoppingCondition(p, RuntimeStoppingCondition(4.1320))
-SetFunctionEvaluationLimit(p,10000000)
+SetFunctionEvaluationLimit(p,100000)
 
 # SetVariableRange(p,1,0.,0.19
 # cons1(x) = 0. < x[1] < 1.
@@ -58,4 +58,4 @@ end
 
 plot!(fig,xlabel="f1 cost",ylabel="f2 cost")
 display(fig)
-savefig(fig, "./test_functions/pareto_result/MOP4.pdf")
+# savefig(fig, "./test_functions/pareto_result/MOP4.pdf")

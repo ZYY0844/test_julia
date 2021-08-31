@@ -9,8 +9,8 @@ Revise.track(DirectSearch)
 m=5
 x_opt=ones(m)
 x2=2*ones(m)
-f1(x)=norm(x-x_opt)^2-390
-f2(x)=norm(x-x2)^2-150
+f1(x)=norm(x-x_opt)^2-20
+f2(x)=norm(x-x2)^2-10
 
 function F1(x)
 
@@ -52,4 +52,4 @@ end
 
 plot!(fig,xlabel="f1 cost",ylabel="f2 cost")
 display(fig)
-# savefig(fig, "./test_functions/pareto_result/F1.pdf")
+savefig(fig, "./test_functions/pareto_result/F1.pdf")

@@ -29,9 +29,9 @@ function F1(x)
     return [f1,f2]
 end
 
-p = DSProblem(m; objective=F1,initial_point=ones(m) ./2, iteration_limit=100000,full_output=false,poll=OrthoMADS());
+p = DSProblem(m; objective=F1,initial_point=zeros(m) ./2, iteration_limit=100000,full_output=false,poll=OrthoMADS());
 # AddStoppingCondition(p, HypervolumeStoppingCondition(4.13))
-# AddStoppingCondition(p, RuntimeStoppingCondition(4.1320))
+# AddStoppingCondition(p, RuntimeStoppingCondition(4.1320q))
 SetFunctionEvaluationLimit(p,10000000)
 
 # SetVariableRange(p,1,0.,0.19

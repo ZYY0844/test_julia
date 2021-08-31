@@ -68,13 +68,13 @@ bb_eval = [
 82099.	4524.0
 34795	5323
 86819	4198
-104106	3302
+94106	3302
 63502	3879
 29719	1207
-18398	407
-18228	402
+18398	607
+18228	602
 5880	632
-12758	617
+6392	617
 11291	609
 21694	1205
 28493	2391
@@ -86,15 +86,15 @@ bb_eval = [
 42789	5168
 4902	626
 ]
-
-for i = 1:20
-    T[i, 1] = a[1, i]
-    T[i, 2] = a[2, i]
-end
+# 
+# for i = 1:20
+#     T[i, 1] = a[1, i]
+#     T[i, 2] = a[2, i]
+# end
 time_fig=performance_profile(
     PlotsBackend(),
     time,
-    ["Solver 1", "Solver 2"],
+    ["DirectSearch", "NOMAD"],
     legend = :bottomright,
     linewidth=2
 )
@@ -102,7 +102,7 @@ time_fig=performance_profile(
 bb_fig=performance_profile(
     PlotsBackend(),
     bb_eval,
-    ["Solver 1", "Solver 2"],
+    ["DirectSearch", "NOMAD"],
     legend = :bottomright,
     linewidth=2
 )

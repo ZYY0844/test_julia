@@ -14,16 +14,16 @@ function mmod(x)
     return [f1,f2]
 end
 
-p = DSProblem(10; objective=mmod,initial_point=ones(10)./2, iteration_limit=100000,full_output=false);
+p = DSProblem(10; objective=mmod,initial_point=zeros(10)./2, iteration_limit=100000,full_output=false);
 # AddStoppingCondition(p, HypervolumeStoppqingCondition(1.4464))
 # AddStoppingCondition(p, RuntimeStoppingCondition(3.5))
 SetFunctionEvaluationLimit(p,10000000)
 
 # SetVariableRange(p,1,0.,0.19)
-cons1(x) = 0. < x[1] < 1.
+cons1(x) = 0. <= x[1] <= 1.
 AddExtremeConstraint(p, cons1)
 for i=2:10
-    cons(x) = -5. < x[i] <5.
+    cons(x) = -5. <= x[i] <= 5.
     AddExtremeConstraint(p, cons)
 end
 

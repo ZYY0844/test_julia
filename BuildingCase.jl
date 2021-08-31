@@ -19,9 +19,9 @@ n_ac = 0.4 # air changes per hour
 A = -(a * U + V * c_air * ρ_air * n_ac)
 
 # Parameters for Simulation
-h=100               # Sample time (only used for plots)
+h=1000            # Sample time (only used for plots)
 # h=2000
-period=5000
+period=5000*4
 # Tf     = 18143100            # Length of experiments (seconds)
 # Tf     = 900*2
 # Tf=23400
@@ -37,14 +37,14 @@ p_init = [0.1,0.1,0.1] # Initial guess [kp, ki, kd]
 Kpid(kp, ki, kd) = pid(kp = kp, ki = ki, kd = kd)
 
 ref=18
-# dis=0.5
-# function disturbance(x,t)
-#     # return [rand(collect(-2:0.1:2))+2]
-#     return [dis .* sin(t/500)+2]
-# end
+dis=0.5
+function disturbance(x,t)
+    # return [rand(collect(-2:0.1:2))+2]
+    return [dis .* sin(t/500)+2]
+end
 function reference(x,t)
     res=18-(-1)^trunc(t/period)*2
-    return [100]
+    return [res]
 end
 
 
@@ -54,22 +54,23 @@ function Tref(p) #take the P,I,D values as an input
     L     = feedback(P * C) |> ss #tf for feedback loop pc/(1+pc) and convert it to state-space representation
 
     #if the obtained system is improper
-    !isproper(feedback(P * C)) && return Inf
+    # !isproper(feedback(P * C)) && return Inf
     #if the obtained system is stable
     e,v=eigen(L.A)
-    any(>=(0), e) && println("unstable") && return Inf
+    # any(>=(0), e) && println("unstable") && return Inf
 
     #Translate the system with tf=L and input signal=ref to a manner that can be solved by an ODE solver
-    s     = Simulator(L, ref)
+    s     = Simulator(L, reference)
     ty    = eltype(p) # So that all inputs to the solver have same numerical type
     x0    = zeros(L.nx) .|> ty
-    # x0[1] = 27.5
+    x0[1] = 34
     tspan = (ty(0.), ty(Tf)) #total simulation period
-    sol   = solve(s, x0, tspan,maxiters=1e7,dtmax=100,dtmin=0.001,reltol = 1e-1,force_dtmin=true)
+    sol   = solve(s, x0, tspan,maxiters=1e7,dtmax=100,dtmin=0.001,reltol = 1e-2,force_dtmin=true)
     # sol   = solve(s, x0, tspan,maxiters=1e8, saveat=collect(0.:30*2:Tf),reltol = 1e-1)
     # sol   = solve(s, x0, tspan, maxiters=1e8,dtmax=10000,reltol = 1e-1)
     # sol   = solve(s, x0, tspan, maxiters=1e8,dtmin=530,reltol = 0.9,force_dtmin=true)
-    y     = L.C * sol(t)+ L.D*18 .* ones(201)' # y = C*x
+    # y     = L.C * sol(t)+ L.D*18 .* ones(201)' # y = C*x
+    y     = L.C * sol(t)
     y
 end
 
@@ -183,24 +184,26 @@ DSp=DS.DSProblem(3; objective = costfun_DS, initial_point = p_init,iteration_lim
 # @show DSp.x= [-0.55, 0.62, 0.08000000000000002]
 # @show DSp.x=[-0.45, 0.67, 0.10000000000000002]
 # @show DSp.x=[-0.25, 0.47000000000000003, 0.17]
-@show DSp.x=[6, 0,0]
-
+# @show DSp.x=[6, 0,0]
+DSp.x = [0.5,0.5,0.5]
 # @show DSp.x=[-0.25, 0.47000000000000003, 1.3877787807814457e-17]
 @show DSp.x
 @show DSp.x_cost
 # @show result
-# @show costfun(DSp.x)
+@show costfun(DSp.x)
+@show Disturbance(DSp.x)
 # y = Tref(DSp.x)
 # y = Tdis(DSp.x)
-# @time y = @time Tref(DSp.x) .+ Tdis(DSp.x)
-@time y = @time Tref(DSp.x)
+# @time y = Tref(DSp.x)+Tdis(DSp.x)
+# @time y = @time Tref(DSp.x)
 @show length(y)
 # y = @time Tref(DSp.x)
  # @time y = @time Tref(p_init)
 
 # y[101]=y[100]
-# y= y .+1.61
+y= y .+1.4
 @show y[1:20]
+@show y[30:60]
 # @show y[90:110]
 # @show typeof(y)
 function set_T(t)
@@ -210,12 +213,14 @@ temp=set_T.(t)
 
 
 # dis=18-(-1)^trunc(t/period)*2+dis .* sin(t/1000)+2
+# fig=plot(t,y')
+# fig=plot(t[1:200],(y')[1:200],xlims=(0,Tf+1500),xticks = 0:5e3:Tf)
+# fig=plot(t[750:1200],(y')[750:1200])
+fig=plot(t[1:500],(y')[1:500])
 
-fig=plot(t[1:200],(y')[1:200],xlims=(0,Tf+1500),xticks = 0:5e3:Tf)
-
-plot!(t[1:200],temp[1:200])
-plot!(fig,fg_legend=:transparent,legend=:bottomright,linewidth = 2)
-plot!(fig,xlabel="Time (sec)",ylabel="Temperature (ᵒC)",label=["T (PID)" "T (Set)"])
+# plot!(t[1:200],temp[1:200])
+# plot!(fig,fg_legend=:transparent,legend=:bottomright,linewidth = 2)
+# plot!(fig,xlabel="Time (sec)",ylabel="Temperature (ᵒC)",label=["T (PID)" "T (Set)"])
 # plot!(fig,xlabel="Integrated absolute error",ylabel="Maximum sensitivity")
 
 display(fig)
@@ -240,13 +245,13 @@ display(fig)
 #     [1.8890603895556883, 0.004287382076502],
 #     [1.8008510990578937,0.004289965110630173],
 #     [2.5879840594943966,0.004285656181],
-#     [17.86, 0.004141040680085014]
+#     # [17.86, 0.004141040680085014]
 # ]
 # fig=scatter()
-# for i in 1:7
+# for i in 1:6
 #     fig=scatter!([result[i][1]],[result[i][2]],color=logocolors.blue,legend = false)
 # end
-# plot!(fig,xlabel="Integrated absolute error",ylabel="Maximum sensitivity")
+# plot!(fig,xlabel="Integrated absolute error",ylabel="Maximum sensitivity",yticks = 0.00428:0.00001:0.00430)
 # display(fig)
 #  savefig(fig, "./temp_fig/pareto2.pdf")
 #
