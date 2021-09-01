@@ -1,0 +1,1897 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.8.22)  1 SEP 2021 09:44
+entering extended mode
+ \write18 enabled.
+ %&-line parsing enabled.
+**Yuanyuan_Zhang_Final_Thesis.tex
+(./Yuanyuan_Zhang_Final_Thesis.tex
+LaTeX2e <2018-12-01>
+(/usr/local/texlive/2019/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2018/09/03 v1.4i Standard LaTeX document class
+(/usr/local/texlive/2019/texmf-dist/tex/latex/base/size11.clo
+File: size11.clo 2018/09/03 v1.4i Standard LaTeX file (size option)
+)
+\c@part=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+) (./xjtlu.sty
+Package: xjtlu 
+
+(/usr/local/texlive/2019/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2019/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+(/usr/local/texlive/2019/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2019/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+(/usr/local/texlive/2019/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 99.
+
+(/usr/local/texlive/2019/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen103
+\Gin@req@width=\dimen104
+)
+(/usr/local/texlive/2019/texmf-dist/tex/latex/base/makeidx.sty
+Package: makeidx 2014/09/29 v1.0m Standard LaTeX package
+)
+(/usr/local/texlive/2019/texmf-dist/tex/latex/nomencl/nomencl.sty
+Package: nomencl 2019/05/05 v5.2 Nomenclature package
+
+(/usr/local/texlive/2019/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
+
+(/usr/local/texlive/2019/texmf-dist/tex/generic/xkeyval/xkeyval.tex
+(/usr/local/texlive/2019/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+\XKV@toks=\toks15
+\XKV@tempa@toks=\toks16
+)
+\XKV@depth=\count88
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+))
+(/usr/local/texlive/2019/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)
+(/usr/local/texlive/2019/texmf-dist/tex/latex/koma-script/tocbasic.sty
+Package: tocbasic 2019/02/01 v3.26b KOMA-Script package (handling toc-files)
+
+(/usr/local/texlive/2019/texmf-dist/tex/latex/koma-script/scrbase.sty
+Package: scrbase 2019/02/01 v3.26b KOMA-Script package (KOMA-Script-independent
+ basics and keyval usage)
+
+(/usr/local/texlive/2019/texmf-dist/tex/latex/koma-script/scrlfile.sty
+Package: scrlfile 2019/02/01 v3.26b KOMA-Script package (loading files)
+))
+\scr@dte@tocline@numberwidth=\skip43
+\scr@dte@tocline@numbox=\box27
+)
+Package tocbasic Info: setting babel extension for `nlo' on input line 155.
+Package tocbasic Info: setting babel extension for `nls' on input line 156.
+\nomlabelwidth=\dimen105
+\nom@tempdim=\dimen106
+\nomitemsep=\skip44
+)
+(/usr/local/texlive/2019/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count89
+\lst@gtempboxa=\box28
+\lst@token=\toks17
+\lst@length=\count90
+\lst@currlwidth=\dimen107
+\lst@column=\count91
+\lst@pos=\count92
+\lst@lostspace=\dimen108
+\lst@width=\dimen109
+\lst@newlines=\count93
+\lst@lineno=\count94
+\lst@maxwidth=\dimen110
+
+(/usr/local/texlive/2019/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2019/02/27 1.8b (Carsten Heinz)
+\c@lstnumber=\count95
+\lst@skipnumbers=\count96
+\lst@framebox=\box29
+)
+(/usr/local/texlive/2019/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2019/02/27 1.8b listings configuration
+))
+Package: listings 2019/02/27 1.8b (Carsten Heinz)
+
+(/usr/local/texlive/2019/texmf-dist/tex/latex/pstricks/pstricks.sty
+Package: pstricks 2018/12/21 v0.69 LaTeX wrapper for `PSTricks' (RN,HV)
+
+(/usr/local/texlive/2019/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2013/04/04 v0.2 Provides if(tex) conditional for PDFTeX, XeTeX, 
+and LuaTeX
+)
+(/usr/local/texlive/2019/texmf-dist/tex/latex/tools/shellesc.sty
+Package: shellesc 2016/06/07 v0.02a unified shell escape interface for LaTeX
+Package shellesc Info: Unrestricted shell escape enabled on input line 67.
+)
+(/usr/local/texlive/2019/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+
+(/usr/local/texlive/2019/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+)
+(/usr/local/texlive/2019/texmf-dist/tex/generic/xkeyval/pst-xkey.tex
+File: pst-xkey.tex 2005/11/25 v1.6 PSTricks specialization of xkeyval (HA)
+)
+(/usr/local/texlive/2019/texmf-dist/tex/generic/pstricks/pstricks.tex
+(/usr/local/texlive/2019/texmf-dist/tex/generic/pstricks/pst-fp.tex
+`pst-fp' v0.05, 2010/01/17 (hv)
+\pstFP@xs=\count97
+\pstFP@xia=\count98
+\pstFP@xib=\count99
+\pstFP@xfa=\count100
+\pstFP@xfb=\count101
+\pstFP@rega=\count102
+\pstFP@regb=\count103
+\pstFP@regs=\count104
+\pstFP@times=\count105
+)
+(/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.te
+x
+\pgfutil@everybye=\toks18
+\pgfutil@tempdima=\dimen111
+\pgfutil@tempdimb=\dimen112
+
+(/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-li
+sts.tex))
+(/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
+\pgfkeys@pathtoks=\toks19
+\pgfkeys@temptoks=\toks20
+
+(/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.c
+ode.tex
+\pgfkeys@tmptoks=\toks21
+))
+(/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
+Loading pgffor.code.tex
+(/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex
+(/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex
+(/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex
+\pgf@x=\dimen113
+\pgf@xa=\dimen114
+\pgf@xb=\dimen115
+\pgf@xc=\dimen116
+\pgf@y=\dimen117
+\pgf@ya=\dimen118
+\pgf@yb=\dimen119
+\pgf@yc=\dimen120
+\c@pgf@counta=\count106
+\c@pgf@countb=\count107
+\c@pgf@countc=\count108
+\c@pgf@countd=\count109
+\pgfutil@tempcnta=\count110
+\pgfutil@tempcntb=\count111
+)
+(/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
+\pgfmath@dimen=\dimen121
+\pgfmath@count=\count112
+\pgfmath@box=\box30
+\pgfmath@toks=\toks22
+\pgfmath@stack@operand=\toks23
+\pgfmath@stack@operation=\toks24
+)
+(/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.
+tex
+(/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic
+.code.tex)
+(/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigo
+nometric.code.tex)
+(/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.rando
+m.code.tex)
+(/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.compa
+rison.code.tex)
+(/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.
+code.tex)
+(/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round
+.code.tex)
+(/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.
+code.tex)
+(/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integ
+erarithmetics.code.tex)))
+(/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
+\c@pgfmathroundto@lastzeros=\count113
+))
+\pgffor@iter=\dimen122
+\pgffor@skip=\dimen123
+\pgffor@stack=\toks25
+\pgffor@toks=\toks26
+)
+\psLoopIndex=\count114
+
+`PSTricks' v2.96  <2019/02/23> (tvz,hv)
+\pst@dima=\dimen124
+\pst@dimb=\dimen125
+\pst@dimc=\dimen126
+\pst@dimd=\dimen127
+\pst@dimg=\dimen128
+\pst@dimh=\dimen129
+\pst@dimm=\dimen130
+\pst@dimn=\dimen131
+\pst@dimo=\dimen132
+\pst@dimp=\dimen133
+\pst@hbox=\box31
+\pst@ibox=\box32
+\pst@boxg=\box33
+\pst@cnta=\count115
+\pst@cntb=\count116
+\pst@cntc=\count117
+\pst@cntd=\count118
+\pst@cntg=\count119
+\pst@cnth=\count120
+\pst@cntm=\count121
+\pst@cntn=\count122
+\pst@cnto=\count123
+\pst@cntp=\count124
+\@zero=\count125
+\pst@toks=\toks27
+(/usr/local/texlive/2019/texmf-dist/tex/generic/pstricks/pstricks.con)
+\psunit=\dimen134
+\psxunit=\dimen135
+\psyunit=\dimen136
+\pst@C@@rType=\count126
+\pslinewidth=\dimen137
+\psk@startLW=\dimen138
+\psk@endLW=\dimen139
+\pst@customdefs=\toks28
+\pslinearc=\dimen140
+\pst@symbolStep=\dimen141
+\pst@symbolWidth=\dimen142
+\pst@symbolLinewidth=\dimen143
+\everypsbox=\toks29
+\psframesep=\dimen144
+\pslabelsep=\dimen145
+\sh@wgridXunit=\dimen146
+\sh@wgridYunit=\dimen147
+\pst@shift=\dimen148
+)
+File: pstricks.tex 2019/02/23 v2.96 `PSTricks' (tvz,hv)
+
+(/usr/local/texlive/2019/texmf-dist/tex/generic/pstricks/pst-fp.tex)
+File: pst-fp.tex 2019/02/23 v2.96 `PST-fp' (hv)
+)
+(/usr/local/texlive/2019/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+Package: fancyhdr 2019/01/31 v3.10 Extensive control of page headers and footer
+s
+\f@nch@headwidth=\skip45
+\f@nch@O@elh=\skip46
+\f@nch@O@erh=\skip47
+\f@nch@O@olh=\skip48
+\f@nch@O@orh=\skip49
+\f@nch@O@elf=\skip50
+\f@nch@O@erf=\skip51
+\f@nch@O@olf=\skip52
+\f@nch@O@orf=\skip53
+)
+(/usr/local/texlive/2019/texmf-dist/tex/latex/psnfss/times.sty
+Package: times 2005/04/12 PSNFSS-v9.2a (SPQR) 
+)
+(/usr/local/texlive/2019/texmf-dist/tex/latex/oberdiek/epstopdf.sty
+Package: epstopdf 2016/05/15 v2.6 Conversion with epstopdf on the fly (HO)
+
+(/usr/local/texlive/2019/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
+
+(/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+)
+(/usr/local/texlive/2019/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
+
+(/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
+Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
+
+(/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+)))
+(/usr/local/texlive/2019/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
+
+(/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
+
+(/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
+
+(/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+))))
+(/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2018/09/10 v0.29 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2018/09/07 v3.3 Provides the ifpdf switch
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+38.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 456.
+
+(/usr/local/texlive/2019/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+)))
+(./psfig.sty
+\@unused=\write3
+\ps@stream=\read1
+\p@intvaluex=\dimen149
+\p@intvaluey=\dimen150
+
+psfig/tex 1.10-dvips
+) (/usr/local/texlive/2019/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip10
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+(/usr/local/texlive/2019/texmf-dist/tex/latex/graphics/epsfig.sty
+Package: epsfig 2017/06/25 v1.7b (e)psfig emulation (SPQR)
+\epsfxsize=\dimen151
+\epsfysize=\dimen152
+)
+(/usr/local/texlive/2019/texmf-dist/tex/latex/psfrag/psfrag.sty
+Package: psfrag 1998/04/11 v3.04 PSfrag (MCG)
+\pfg@pcount=\count127
+\pfg@scount=\count128
+\pfg@temp=\write4
+)
+(/usr/local/texlive/2019/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+(/usr/local/texlive/2019/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\@emptytoks=\toks30
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+))
+(/usr/local/texlive/2019/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count129
+\float@exts=\toks31
+\float@box=\box34
+\@float@everytoks=\toks32
+\@floatcapt=\box35
+)
+(/usr/local/texlive/2019/texmf-dist/tex/latex/algorithmicx/algpseudocode.sty
+Package: algpseudocode 
+
+(/usr/local/texlive/2019/texmf-dist/tex/latex/algorithmicx/algorithmicx.sty
+Package: algorithmicx 2005/04/27 v1.2 Algorithmicx
+
+Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
+\c@ALG@line=\count130
+\c@ALG@rem=\count131
+\c@ALG@nested=\count132
+\ALG@tlm=\skip54
+\ALG@thistlm=\skip55
+\c@ALG@Lnr=\count133
+\c@ALG@blocknr=\count134
+\c@ALG@storecount=\count135
+\c@ALG@tmpcounter=\count136
+\ALG@tmplength=\skip56
+)
+Document Style - pseudocode environments for use with the `algorithmicx' style
+) (/usr/local/texlive/2019/texmf-dist/tex/latex/algorithms/algorithm.sty
+Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating enviro
+nment
+\@float@every@algorithm=\toks33
+\c@algorithm=\count137
+)
+(/usr/local/texlive/2019/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2018/12/01 v2.17b AMS math features
+\@mathmargin=\skip57
+
+For additional information on amsmath, use the `?' option.
+(/usr/local/texlive/2019/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01 AMS text
+
+(/usr/local/texlive/2019/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks34
+\ex@=\dimen153
+))
+(/usr/local/texlive/2019/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen154
+)
+(/usr/local/texlive/2019/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count138
+LaTeX Info: Redefining \frac on input line 223.
+\uproot@=\count139
+\leftroot@=\count140
+LaTeX Info: Redefining \overline on input line 385.
+\classnum@=\count141
+\DOTSCASE@=\count142
+LaTeX Info: Redefining \ldots on input line 482.
+LaTeX Info: Redefining \dots on input line 485.
+LaTeX Info: Redefining \cdots on input line 606.
+\Mathstrutbox@=\box36
+\strutbox@=\box37
+\big@size=\dimen155
+LaTeX Font Info:    Redeclaring font encoding OML on input line 729.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 730.
+\macc@depth=\count143
+\c@MaxMatrixCols=\count144
+\dotsspace@=\muskip11
+\c@parentequation=\count145
+\dspbrk@lvl=\count146
+\tag@help=\toks35
+\row@=\count147
+\column@=\count148
+\maxfields@=\count149
+\andhelp@=\toks36
+\eqnshift@=\dimen156
+\alignsep@=\dimen157
+\tagshift@=\dimen158
+\tagwidth@=\dimen159
+\totwidth@=\dimen160
+\lineht@=\dimen161
+\@envbody=\toks37
+\multlinegap=\skip58
+\multlinetaggap=\skip59
+\mathdisplay@stack=\toks38
+LaTeX Info: Redefining \[ on input line 2844.
+LaTeX Info: Redefining \] on input line 2845.
+)
+(/usr/local/texlive/2019/texmf-dist/tex/latex/multirow/multirow.sty
+Package: multirow 2019/01/01 v2.4 Span multiple rows of a table
+\multirow@colwidth=\skip60
+\multirow@cntb=\count150
+\multirow@dima=\skip61
+\bigstrutjot=\dimen162
+)
+(/usr/local/texlive/2019/texmf-dist/tex/latex/tools/enumerate.sty
+Package: enumerate 2015/07/23 v3.00 enumerate extensions (DPC)
+\@enLab=\toks39
+)
+(/usr/local/texlive/2019/texmf-dist/tex/latex/setspace/setspace.sty
+Package: setspace 2011/12/19 v6.7a set line spacing
+)
+(/usr/local/texlive/2019/texmf-dist/tex/latex/tools/bm.sty
+Package: bm 2017/01/16 v1.2c Bold Symbol Support (DPC/FMi)
+\symboldoperators=\mathgroup6
+\symboldletters=\mathgroup7
+\symboldsymbols=\mathgroup8
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 141.
+LaTeX Info: Redefining \bm on input line 207.
+)
+(/usr/local/texlive/2019/texmf-dist/tex/latex/esint/esint.sty
+Package: esint 
+\symlargesymbolsA=\mathgroup9
+)
+(/usr/local/texlive/2019/texmf-dist/tex/latex/tools/array.sty
+Package: array 2018/12/30 v2.4k Tabular extension package (FMi)
+\col@sep=\dimen163
+\ar@mcellbox=\box38
+\extrarowheight=\dimen164
+\NC@list=\toks40
+\extratabsurround=\skip62
+\backup@length=\skip63
+\ar@cellbox=\box39
+)
+(/usr/local/texlive/2019/texmf-dist/tex/latex/booktabs/booktabs.sty
+Package: booktabs 2016/04/27 v1.618033 publication quality tables
+\heavyrulewidth=\dimen165
+\lightrulewidth=\dimen166
+\cmidrulewidth=\dimen167
+\belowrulesep=\dimen168
+\belowbottomsep=\dimen169
+\aboverulesep=\dimen170
+\abovetopsep=\dimen171
+\cmidrulesep=\dimen172
+\cmidrulekern=\dimen173
+\defaultaddspace=\dimen174
+\@cmidla=\count151
+\@cmidlb=\count152
+\@aboverulesep=\dimen175
+\@belowrulesep=\dimen176
+\@thisruleclass=\count153
+\@lastruleclass=\count154
+\@thisrulewidth=\dimen177
+)
+(/usr/local/texlive/2019/texmf-dist/tex/latex/pdfpages/pdfpages.sty
+Package: pdfpages 2017/10/31 v0.5l Insert pages of external PDF documents (AM)
+
+(/usr/local/texlive/2019/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count155
+\calc@Bcount=\count156
+\calc@Adimen=\dimen178
+\calc@Bdimen=\dimen179
+\calc@Askip=\skip64
+\calc@Bskip=\skip65
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count157
+\calc@Cskip=\skip66
+)
+(/usr/local/texlive/2019/texmf-dist/tex/latex/eso-pic/eso-pic.sty
+Package: eso-pic 2018/04/12 v2.0h eso-pic (RN)
+
+(/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/atbegshi.sty
+Package: atbegshi 2016/06/09 v1.18 At begin shipout hook (HO)
+))
+\AM@pagewidth=\dimen180
+\AM@pageheight=\dimen181
+
+(/usr/local/texlive/2019/texmf-dist/tex/latex/pdfpages/pppdftex.def
+File: pppdftex.def 2017/10/31 v0.5l Pdfpages driver for pdfTeX (AM)
+)
+\AM@pagebox=\box40
+\AM@global@opts=\toks41
+\AM@toc@title=\toks42
+\c@AM@survey=\count158
+\AM@templatesizebox=\box41
+)
+(/usr/local/texlive/2019/texmf-dist/tex/latex/preprint/fullpage.sty
+Package: fullpage 1999/02/23 1.1 (PWD)
+\FP@margin=\skip67
+)
+(/usr/local/texlive/2019/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2018/04/16 v5.8 Page Geometry
+
+(/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/ifvtex.sty
+Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
+)
+(/usr/local/texlive/2019/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+\Gm@cnth=\count159
+\Gm@cntv=\count160
+\c@Gm@tempcnt=\count161
+\Gm@bindingoffset=\dimen182
+\Gm@wd@mp=\dimen183
+\Gm@odd@mp=\dimen184
+\Gm@even@mp=\dimen185
+\Gm@layoutwidth=\dimen186
+\Gm@layoutheight=\dimen187
+\Gm@layouthoffset=\dimen188
+\Gm@layoutvoffset=\dimen189
+\Gm@dimlist=\toks43
+)
+(/usr/local/texlive/2019/texmf-dist/tex/latex/subfigure/subfigure.sty
+Package: subfigure 2002/03/15 v2.1.5 subfigure package
+\subfigtopskip=\skip68
+\subfigcapskip=\skip69
+\subfigcaptopadj=\dimen190
+\subfigbottomskip=\skip70
+\subfigcapmargin=\dimen191
+\subfiglabelskip=\skip71
+\c@subfigure=\count162
+\c@lofdepth=\count163
+\c@subtable=\count164
+\c@lotdepth=\count165
+
+****************************************
+* Local config file subfigure.cfg used *
+****************************************
+(/usr/local/texlive/2019/texmf-dist/tex/latex/subfigure/subfigure.cfg)
+\subfig@top=\skip72
+\subfig@bottom=\skip73
+)
+\@indexfile=\write5
+\openout5 = `Yuanyuan_Zhang_Final_Thesis.idx'.
+
+
+Writing index file Yuanyuan_Zhang_Final_Thesis.idx
+\@glossaryfile=\write6
+\openout6 = `Yuanyuan_Zhang_Final_Thesis.glo'.
+
+Writing glossary file Yuanyuan_Zhang_Final_Thesis.glo 
+) (/usr/local/texlive/2019/texmf-dist/tex/latex/fvextra/fvextra.sty
+Package: fvextra 2019/02/04 v1.4 fvextra - extensions and patches for fancyvrb
+
+(/usr/local/texlive/2019/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2018/08/19 v2.5f e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count166
+)
+(/usr/local/texlive/2019/texmf-dist/tex/latex/fancyvrb/fancyvrb.sty
+Package: fancyvrb 2019/01/15
+
+Style option: `fancyvrb' v3.2a <2019/01/15> (tvz)
+\FV@CodeLineNo=\count167
+\FV@InFile=\read2
+\FV@TabBox=\box42
+\c@FancyVerbLine=\count168
+\FV@StepNumber=\count169
+\FV@OutFile=\write7
+)
+(/usr/local/texlive/2019/texmf-dist/tex/latex/upquote/upquote.sty
+Package: upquote 2012/04/19 v1.3 upright-quote and grave-accent glyphs in verba
+tim
+
+(/usr/local/texlive/2019/texmf-dist/tex/latex/base/textcomp.sty
+Package: textcomp 2018/08/11 v2.0j Standard LaTeX package
+Package textcomp Info: Sub-encoding information:
+(textcomp)               5 = only ISO-Adobe without \textcurrency
+(textcomp)               4 = 5 + \texteuro
+(textcomp)               3 = 4 + \textohm
+(textcomp)               2 = 3 + \textestimated + \textcurrency
+(textcomp)               1 = TS1 - \textcircled - \t
+(textcomp)               0 = TS1 (full)
+(textcomp)             Font families with sub-encoding setting implement
+(textcomp)             only a restricted character set as indicated.
+(textcomp)             Family '?' is the default used for unknown fonts.
+(textcomp)             See the documentation for details.
+Package textcomp Info: Setting ? sub-encoding to TS1/1 on input line 79.
+
+(/usr/local/texlive/2019/texmf-dist/tex/latex/base/ts1enc.def
+File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
+Now handling font encoding TS1 ...
+... processing UTF-8 mapping file for font encoding TS1
+
+(/usr/local/texlive/2019/texmf-dist/tex/latex/base/ts1enc.dfu
+File: ts1enc.dfu 2018/10/05 v1.2f UTF-8 support for inputenc
+   defining Unicode char U+00A2 (decimal 162)
+   defining Unicode char U+00A3 (decimal 163)
+   defining Unicode char U+00A4 (decimal 164)
+   defining Unicode char U+00A5 (decimal 165)
+   defining Unicode char U+00A6 (decimal 166)
+   defining Unicode char U+00A7 (decimal 167)
+   defining Unicode char U+00A8 (decimal 168)
+   defining Unicode char U+00A9 (decimal 169)
+   defining Unicode char U+00AA (decimal 170)
+   defining Unicode char U+00AC (decimal 172)
+   defining Unicode char U+00AE (decimal 174)
+   defining Unicode char U+00AF (decimal 175)
+   defining Unicode char U+00B0 (decimal 176)
+   defining Unicode char U+00B1 (decimal 177)
+   defining Unicode char U+00B2 (decimal 178)
+   defining Unicode char U+00B3 (decimal 179)
+   defining Unicode char U+00B4 (decimal 180)
+   defining Unicode char U+00B5 (decimal 181)
+   defining Unicode char U+00B6 (decimal 182)
+   defining Unicode char U+00B7 (decimal 183)
+   defining Unicode char U+00B9 (decimal 185)
+   defining Unicode char U+00BA (decimal 186)
+   defining Unicode char U+00BC (decimal 188)
+   defining Unicode char U+00BD (decimal 189)
+   defining Unicode char U+00BE (decimal 190)
+   defining Unicode char U+00D7 (decimal 215)
+   defining Unicode char U+00F7 (decimal 247)
+   defining Unicode char U+0192 (decimal 402)
+   defining Unicode char U+02C7 (decimal 711)
+   defining Unicode char U+02D8 (decimal 728)
+   defining Unicode char U+02DD (decimal 733)
+   defining Unicode char U+0E3F (decimal 3647)
+   defining Unicode char U+2016 (decimal 8214)
+   defining Unicode char U+2020 (decimal 8224)
+   defining Unicode char U+2021 (decimal 8225)
+   defining Unicode char U+2022 (decimal 8226)
+   defining Unicode char U+2030 (decimal 8240)
+   defining Unicode char U+2031 (decimal 8241)
+   defining Unicode char U+203B (decimal 8251)
+   defining Unicode char U+203D (decimal 8253)
+   defining Unicode char U+2044 (decimal 8260)
+   defining Unicode char U+204E (decimal 8270)
+   defining Unicode char U+2052 (decimal 8274)
+   defining Unicode char U+20A1 (decimal 8353)
+   defining Unicode char U+20A4 (decimal 8356)
+   defining Unicode char U+20A6 (decimal 8358)
+   defining Unicode char U+20A9 (decimal 8361)
+   defining Unicode char U+20AB (decimal 8363)
+   defining Unicode char U+20AC (decimal 8364)
+   defining Unicode char U+20B1 (decimal 8369)
+   defining Unicode char U+2103 (decimal 8451)
+   defining Unicode char U+2116 (decimal 8470)
+   defining Unicode char U+2117 (decimal 8471)
+   defining Unicode char U+211E (decimal 8478)
+   defining Unicode char U+2120 (decimal 8480)
+   defining Unicode char U+2122 (decimal 8482)
+   defining Unicode char U+2126 (decimal 8486)
+   defining Unicode char U+2127 (decimal 8487)
+   defining Unicode char U+212E (decimal 8494)
+   defining Unicode char U+2190 (decimal 8592)
+   defining Unicode char U+2191 (decimal 8593)
+   defining Unicode char U+2192 (decimal 8594)
+   defining Unicode char U+2193 (decimal 8595)
+   defining Unicode char U+2329 (decimal 9001)
+   defining Unicode char U+232A (decimal 9002)
+   defining Unicode char U+2422 (decimal 9250)
+   defining Unicode char U+25E6 (decimal 9702)
+   defining Unicode char U+25EF (decimal 9711)
+   defining Unicode char U+266A (decimal 9834)
+   defining Unicode char U+FEFF (decimal 65279)
+))
+LaTeX Info: Redefining \oldstylenums on input line 334.
+Package textcomp Info: Setting cmr sub-encoding to TS1/0 on input line 349.
+Package textcomp Info: Setting cmss sub-encoding to TS1/0 on input line 350.
+Package textcomp Info: Setting cmtt sub-encoding to TS1/0 on input line 351.
+Package textcomp Info: Setting cmvtt sub-encoding to TS1/0 on input line 352.
+Package textcomp Info: Setting cmbr sub-encoding to TS1/0 on input line 353.
+Package textcomp Info: Setting cmtl sub-encoding to TS1/0 on input line 354.
+Package textcomp Info: Setting ccr sub-encoding to TS1/0 on input line 355.
+Package textcomp Info: Setting ptm sub-encoding to TS1/4 on input line 356.
+Package textcomp Info: Setting pcr sub-encoding to TS1/4 on input line 357.
+Package textcomp Info: Setting phv sub-encoding to TS1/4 on input line 358.
+Package textcomp Info: Setting ppl sub-encoding to TS1/3 on input line 359.
+Package textcomp Info: Setting pag sub-encoding to TS1/4 on input line 360.
+Package textcomp Info: Setting pbk sub-encoding to TS1/4 on input line 361.
+Package textcomp Info: Setting pnc sub-encoding to TS1/4 on input line 362.
+Package textcomp Info: Setting pzc sub-encoding to TS1/4 on input line 363.
+Package textcomp Info: Setting bch sub-encoding to TS1/4 on input line 364.
+Package textcomp Info: Setting put sub-encoding to TS1/5 on input line 365.
+Package textcomp Info: Setting uag sub-encoding to TS1/5 on input line 366.
+Package textcomp Info: Setting ugq sub-encoding to TS1/5 on input line 367.
+Package textcomp Info: Setting ul8 sub-encoding to TS1/4 on input line 368.
+Package textcomp Info: Setting ul9 sub-encoding to TS1/4 on input line 369.
+Package textcomp Info: Setting augie sub-encoding to TS1/5 on input line 370.
+Package textcomp Info: Setting dayrom sub-encoding to TS1/3 on input line 371.
+Package textcomp Info: Setting dayroms sub-encoding to TS1/3 on input line 372.
+
+Package textcomp Info: Setting pxr sub-encoding to TS1/0 on input line 373.
+Package textcomp Info: Setting pxss sub-encoding to TS1/0 on input line 374.
+Package textcomp Info: Setting pxtt sub-encoding to TS1/0 on input line 375.
+Package textcomp Info: Setting txr sub-encoding to TS1/0 on input line 376.
+Package textcomp Info: Setting txss sub-encoding to TS1/0 on input line 377.
+Package textcomp Info: Setting txtt sub-encoding to TS1/0 on input line 378.
+Package textcomp Info: Setting lmr sub-encoding to TS1/0 on input line 379.
+Package textcomp Info: Setting lmdh sub-encoding to TS1/0 on input line 380.
+Package textcomp Info: Setting lmss sub-encoding to TS1/0 on input line 381.
+Package textcomp Info: Setting lmssq sub-encoding to TS1/0 on input line 382.
+Package textcomp Info: Setting lmvtt sub-encoding to TS1/0 on input line 383.
+Package textcomp Info: Setting lmtt sub-encoding to TS1/0 on input line 384.
+Package textcomp Info: Setting qhv sub-encoding to TS1/0 on input line 385.
+Package textcomp Info: Setting qag sub-encoding to TS1/0 on input line 386.
+Package textcomp Info: Setting qbk sub-encoding to TS1/0 on input line 387.
+Package textcomp Info: Setting qcr sub-encoding to TS1/0 on input line 388.
+Package textcomp Info: Setting qcs sub-encoding to TS1/0 on input line 389.
+Package textcomp Info: Setting qpl sub-encoding to TS1/0 on input line 390.
+Package textcomp Info: Setting qtm sub-encoding to TS1/0 on input line 391.
+Package textcomp Info: Setting qzc sub-encoding to TS1/0 on input line 392.
+Package textcomp Info: Setting qhvc sub-encoding to TS1/0 on input line 393.
+Package textcomp Info: Setting futs sub-encoding to TS1/4 on input line 394.
+Package textcomp Info: Setting futx sub-encoding to TS1/4 on input line 395.
+Package textcomp Info: Setting futj sub-encoding to TS1/4 on input line 396.
+Package textcomp Info: Setting hlh sub-encoding to TS1/3 on input line 397.
+Package textcomp Info: Setting hls sub-encoding to TS1/3 on input line 398.
+Package textcomp Info: Setting hlst sub-encoding to TS1/3 on input line 399.
+Package textcomp Info: Setting hlct sub-encoding to TS1/5 on input line 400.
+Package textcomp Info: Setting hlx sub-encoding to TS1/5 on input line 401.
+Package textcomp Info: Setting hlce sub-encoding to TS1/5 on input line 402.
+Package textcomp Info: Setting hlcn sub-encoding to TS1/5 on input line 403.
+Package textcomp Info: Setting hlcw sub-encoding to TS1/5 on input line 404.
+Package textcomp Info: Setting hlcf sub-encoding to TS1/5 on input line 405.
+Package textcomp Info: Setting pplx sub-encoding to TS1/3 on input line 406.
+Package textcomp Info: Setting pplj sub-encoding to TS1/3 on input line 407.
+Package textcomp Info: Setting ptmx sub-encoding to TS1/4 on input line 408.
+Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 409.
+))
+(/usr/local/texlive/2019/texmf-dist/tex/latex/lineno/lineno.sty
+Package: lineno 2005/11/02 line numbers on paragraphs v4.41
+\linenopenalty=\count170
+\output=\toks44
+\linenoprevgraf=\count171
+\linenumbersep=\dimen192
+\linenumberwidth=\dimen193
+\c@linenumber=\count172
+\c@pagewiselinenumber=\count173
+\c@LN@truepage=\count174
+\c@internallinenumber=\count175
+\c@internallinenumbers=\count176
+\quotelinenumbersep=\dimen194
+\bframerule=\dimen195
+\bframesep=\dimen196
+\bframebox=\box43
+LaTeX Info: Redefining \\ on input line 3056.
+)
+\c@FV@TrueTabGroupLevel=\count177
+\c@FV@TrueTabCounter=\count178
+\FV@TabBox@Group=\box44
+\FV@TmpLength=\skip74
+\c@FV@HighlightLinesStart=\count179
+\c@FV@HighlightLinesStop=\count180
+\FV@LoopCount=\count181
+\FV@NCharsBox=\box45
+\FV@BreakIndent=\dimen197
+\FV@BreakIndentNChars=\count182
+\FV@BreakSymbolSepLeft=\dimen198
+\FV@BreakSymbolSepLeftNChars=\count183
+\FV@BreakSymbolSepRight=\dimen199
+\FV@BreakSymbolSepRightNChars=\count184
+\FV@BreakSymbolIndentLeft=\dimen256
+\FV@BreakSymbolIndentLeftNChars=\count185
+\FV@BreakSymbolIndentRight=\dimen257
+\FV@BreakSymbolIndentRightNChars=\count186
+\c@FancyVerbLineBreakLast=\count187
+\FV@LineBox=\box46
+\FV@LineIndentBox=\box47
+\FV@LineWidth=\dimen258
+)
+(/usr/local/texlive/2019/texmf-dist/tex/latex/minted/minted.sty
+Package: minted 2017/07/19 v2.5 Yet another Pygments shim for LaTeX
+
+(/usr/local/texlive/2019/texmf-dist/tex/latex/ifplatform/ifplatform.sty
+Package: ifplatform 2017/10/13 v0.4a Testing for the operating system
+
+(/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/catchfile.sty
+Package: catchfile 2016/05/16 v1.7 Catch the contents of a file (HO)
+)
+runsystem(uname -s > "Yuanyuan_Zhang_Final_Thesis.w18")...executed.
+
+
+(./Yuanyuan_Zhang_Final_Thesis.w18)
+runsystem(rm -- "Yuanyuan_Zhang_Final_Thesis.w18")...executed.
+
+)
+(/usr/local/texlive/2019/texmf-dist/tex/generic/xstring/xstring.sty
+(/usr/local/texlive/2019/texmf-dist/tex/generic/xstring/xstring.tex
+\integerpart=\count188
+\decimalpart=\count189
+)
+Package: xstring 2019/02/06 v1.83 String manipulations (CT)
+)
+(/usr/local/texlive/2019/texmf-dist/tex/latex/framed/framed.sty
+Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
+\OuterFrameSep=\skip75
+\fb@frw=\dimen259
+\fb@frh=\dimen260
+\FrameRule=\dimen261
+\FrameSep=\dimen262
+)
+\minted@appexistsfile=\read3
+\minted@bgbox=\box48
+\minted@code=\write8
+\c@minted@FancyVerbLineTemp=\count190
+\c@minted@pygmentizecounter=\count191
+\@float@every@listing=\toks45
+\c@listing=\count192
+)
+runsystem(mkdir -p _minted-Yuanyuan_Zhang_Final_Thesis)...executed.
+
+
+(/usr/local/texlive/2019/texmf-dist/tex/latex/cprotect/cprotect.sty
+Package: cprotect 2011/01/27 v1.0e (Bruno Le Floch)
+
+(/usr/local/texlive/2019/texmf-dist/tex/latex/bigfoot/suffix.sty
+Package: suffix 2006/07/15 1.5a Variant command support
+)
+\CPT@WriteOut=\write9
+\c@CPT@WriteCount=\count193
+\c@CPT@numB=\count194
+\CPT@commandatend@toks=\toks46
+)
+\myindent=\skip76
+
+(/usr/local/texlive/2019/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2019/02/27 1.8b listings language file
+)
+(./mcode.sty
+-- Package: `mcode' 2.7 <2015/11/11> --
+Package: mcode 2015/11/11 2.7
+ - settings optimized for display (colour formating)
+ - line numbering enabled
+ - literate programming (character replacements) enabled
+ - automatic line breaking enabled (careful, buggy!)
+ - framed listings
+\lbreakdots=\box49
+LaTeX Font Info:    Try loading font information for OT1+pcr on input line 230.
+
+(/usr/local/texlive/2019/texmf-dist/tex/latex/psnfss/ot1pcr.fd
+File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
+))
+(/usr/local/texlive/2019/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2018/11/30 v6.88e Hypertext links for LaTeX
+
+(/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
+Package: hobsub-hyperref 2016/05/16 v1.14 Bundle oberdiek, subset hyperref (HO)
+
+
+(/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
+Package: hobsub-generic 2016/05/16 v1.14 Bundle oberdiek, subset generic (HO)
+Package: hobsub 2016/05/16 v1.14 Construct package bundles (HO)
+Package hobsub Info: Skipping package `infwarerr' (already loaded).
+Package hobsub Info: Skipping package `ltxcmds' (already loaded).
+Package hobsub Info: Skipping package `ifluatex' (already loaded).
+Package hobsub Info: Skipping package `ifvtex' (already loaded).
+Package: intcalc 2016/05/16 v1.2 Expandable calculations with integers (HO)
+Package hobsub Info: Skipping package `ifpdf' (already loaded).
+Package hobsub Info: Skipping package `etexcmds' (already loaded).
+Package hobsub Info: Skipping package `kvsetkeys' (already loaded).
+Package hobsub Info: Skipping package `kvdefinekeys' (already loaded).
+Package hobsub Info: Skipping package `pdftexcmds' (already loaded).
+Package: pdfescape 2016/05/16 v1.14 Implements pdfTeX's escape features (HO)
+Package: bigintcalc 2016/05/16 v1.4 Expandable calculations on big integers (HO
+)
+Package: bitset 2016/05/16 v1.2 Handle bit-vector datatype (HO)
+Package: uniquecounter 2016/05/16 v1.3 Provide unlimited unique counter (HO)
+)
+Package hobsub Info: Skipping package `hobsub' (already loaded).
+Package: letltxmacro 2016/05/16 v1.5 Let assignment for LaTeX macros (HO)
+Package: hopatch 2016/05/16 v1.3 Wrapper for package hooks (HO)
+Package: xcolor-patch 2016/05/16 xcolor patch
+Package: atveryend 2016/05/16 v1.9 Hooks at the very end of document (HO)
+Package hobsub Info: Skipping package `atbegshi' (already loaded).
+Package: refcount 2016/05/16 v3.5 Data extraction from label references (HO)
+Package: hycolor 2016/05/16 v1.8 Color options for hyperref/bookmark (HO)
+)
+(/usr/local/texlive/2019/texmf-dist/tex/latex/oberdiek/auxhook.sty
+Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
+)
+\@linkdim=\dimen263
+\Hy@linkcounter=\count195
+\Hy@pagecounter=\count196
+
+(/usr/local/texlive/2019/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2018/11/30 v6.88e Hyperref: PDFDocEncoding definition (HO)
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
+)
+\Hy@SavedSpaceFactor=\count197
+
+(/usr/local/texlive/2019/texmf-dist/tex/latex/latexconfig/hyperref.cfg
+File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
+)
+Package hyperref Info: Option `breaklinks' set `true' on input line 4393.
+Package hyperref Info: Option `bookmarks' set `false' on input line 4393.
+Package hyperref Info: Hyper figures OFF on input line 4519.
+Package hyperref Info: Link nesting OFF on input line 4524.
+Package hyperref Info: Hyper index ON on input line 4527.
+Package hyperref Info: Plain pages OFF on input line 4534.
+Package hyperref Info: Backreferencing OFF on input line 4539.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks OFF on input line 4778.
+\c@Hy@tempcnt=\count198
+LaTeX Info: Redefining \url on input line 5125.
+\XeTeXLinkMargin=\dimen264
+\Fld@menulength=\count199
+\Field@Width=\dimen265
+\Fld@charsize=\dimen266
+Package hyperref Info: Hyper figures OFF on input line 6380.
+Package hyperref Info: Link nesting OFF on input line 6385.
+Package hyperref Info: Hyper index ON on input line 6388.
+Package hyperref Info: backreferencing OFF on input line 6395.
+Package hyperref Info: Link coloring OFF on input line 6400.
+Package hyperref Info: Link coloring with OCG OFF on input line 6405.
+Package hyperref Info: PDF/A mode OFF on input line 6410.
+LaTeX Info: Redefining \ref on input line 6450.
+LaTeX Info: Redefining \pageref on input line 6454.
+\Hy@abspage=\count266
+\c@Item=\count267
+\c@Hfootnote=\count268
+)
+Package hyperref Info: Driver (autodetected): hpdftex.
+
+(/usr/local/texlive/2019/texmf-dist/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2018/11/30 v6.88e Hyperref driver for pdfTeX
+\Fld@listcount=\count269
+\c@bookmark@seq@number=\count270
+
+(/usr/local/texlive/2019/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
+Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+82.
+)
+\Hy@SectionHShift=\skip77
+)
+*geometry* verbose mode - [ newgeometry ] result:
+* driver: 
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(71.13188pt, 472.03123pt, 71.13188pt)
+* v-part:(T,H,B)=(56.9055pt, 652.70622pt, 85.35826pt)
+* \paperwidth=614.295pt
+* \paperheight=794.96999pt
+* \textwidth=472.03123pt
+* \textheight=652.70622pt
+* \oddsidemargin=-1.1381pt
+* \evensidemargin=-1.1381pt
+* \topmargin=-15.36449pt
+* \headheight=0.0pt
+* \headsep=0.0pt
+* \topskip=11.0pt
+* \footskip=30.0pt
+* \marginparwidth=59.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+runsystem(which pygmentize && touch Yuanyuan_Zhang_Final_Thesis.aex)...executed
+.
+
+runsystem(rm Yuanyuan_Zhang_Final_Thesis.aex)...executed.
+
+
+
+LaTeX Warning: Unused global option(s):
+    [openright].
+
+(./Yuanyuan_Zhang_Final_Thesis.aux)
+\openout1 = `Yuanyuan_Zhang_Final_Thesis.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 50.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 50.
+
+(/usr/local/texlive/2019/texmf-dist/tex/latex/base/ts1cmr.fd
+File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 50.
+
+(/usr/local/texlive/2019/texmf-dist/tex/latex/psnfss/ot1ptm.fd
+File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
+)
+(/usr/local/texlive/2019/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count271
+\scratchdimen=\dimen267
+\scratchbox=\box50
+\nofMPsegments=\count272
+\nofMParguments=\count273
+\everyMPshowfont=\toks47
+\MPscratchCnt=\count274
+\MPscratchDim=\dimen268
+\MPnumerator=\count275
+\makeMPintoPDFobject=\count276
+\everyMPtoPDFconversion=\toks48
+)
+\c@lstlisting=\count277
+\AtBeginShipoutBox=\box51
+ (/usr/local/texlive/2019/texmf-dist/tex/latex/oberdiek/pdflscape.sty
+Package: pdflscape 2016/05/14 v0.11 Display of landscape pages in PDF (HO)
+
+(/usr/local/texlive/2019/texmf-dist/tex/latex/graphics/lscape.sty
+Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
+)
+Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
+)
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(71.13188pt, 472.03123pt, 71.13188pt)
+* v-part:(T,H,B)=(56.9055pt, 652.70622pt, 85.35826pt)
+* \paperwidth=614.295pt
+* \paperheight=794.96999pt
+* \textwidth=472.03123pt
+* \textheight=652.70622pt
+* \oddsidemargin=-1.1381pt
+* \evensidemargin=-1.1381pt
+* \topmargin=-15.36449pt
+* \headheight=0.0pt
+* \headsep=14.22636pt
+* \topskip=11.0pt
+* \footskip=30.0pt
+* \marginparwidth=59.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+Package hyperref Info: Link coloring OFF on input line 50.
+(/usr/local/texlive/2019/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
+
+(/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
+Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
+)
+\c@section@level=\count278
+)
+LaTeX Info: Redefining \ref on input line 50.
+LaTeX Info: Redefining \pageref on input line 50.
+LaTeX Info: Redefining \nameref on input line 50.
+Package epstopdf Info: Source file: <fig/IC_logo.eps>
+(epstopdf)                    date: 2021-08-26 10:37:13
+(epstopdf)                    size: 1035452 bytes
+(epstopdf)             Output file: <fig/IC_logo-eps-converted-to.pdf>
+(epstopdf)                    date: 2021-08-26 10:39:52
+(epstopdf)                    size: 15825 bytes
+(epstopdf)             Command: <epstopdf --outfile=fig/IC_logo-eps-converted-t
+o.pdf fig/IC_logo.eps>
+(epstopdf)             \includegraphics on input line 55.
+Package epstopdf Info: Output file is already uptodate.
+<fig/IC_logo-eps-converted-to.pdf, id=4, 362.35374pt x 95.35625pt>
+File: fig/IC_logo-eps-converted-to.pdf Graphic file (type pdf)
+<use fig/IC_logo-eps-converted-to.pdf>
+Package pdftex.def Info: fig/IC_logo-eps-converted-to.pdf  used on input line 5
+5.
+(pdftex.def)             Requested size: 236.01561pt x 62.1103pt.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <20.74> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 67.
+LaTeX Font Info:    Try loading font information for U+msa on input line 77.
+
+(/usr/local/texlive/2019/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 77.
+
+(/usr/local/texlive/2019/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Try loading font information for U+esint on input line 77.
+
+(/usr/local/texlive/2019/texmf-dist/tex/latex/esint/uesint.fd
+File: uesint.fd 
+)
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 78.
+ [1
+Non-PDF special ignored!
+<special> header=pstricks.pro
+Non-PDF special ignored!
+<special> header=pst-algparser.pro
+Non-PDF special ignored!
+<special> header=pst-tools.pro
+Non-PDF special ignored!
+<special> header=pst-dots.pro
+Non-PDF special ignored!
+<special> header=psfrag.pro
+
+Non-PDF special ignored!
+<special> ps: /pssetRGBcolor /setrgbcolor load def /pssetCMYKcolor /setcmyk...
+Non-PDF special ignored!
+<special> ps:tx@Dict begin  gsave STV CP T /ps@rot 0 def grestore  end
+Non-PDF special ignored!
+<special> ps:tx@Dict begin  gsave STV CP T /ps@refangle 0.  def grestore  e...
+
+{/usr/local/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./fig/I
+C_logo-eps-converted-to.pdf>]
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 103.
+ [1]
+Underfull \hbox (badness 10000) in paragraph at lines 113--118
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 113--118
+
+ []
+
+[2
+
+
+] (./Yuanyuan_Zhang_Final_Thesis.toc)
+\tf@toc=\write10
+\openout10 = `Yuanyuan_Zhang_Final_Thesis.toc'.
+
+ [3
+
+]
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 132.
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.141 
+       [1] [2]
+LaTeX Font Info:    Try loading font information for TS1+ptm on input line 163.
+
+ (/usr/local/texlive/2019/texmf-dist/tex/latex/psnfss/ts1ptm.fd
+File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
+)
+<fig/bimadsmap.png, id=139, 759.83875pt x 626.34pt>
+File: fig/bimadsmap.png Graphic file (type png)
+<use fig/bimadsmap.png>
+Package pdftex.def Info: fig/bimadsmap.png  used on input line 172.
+(pdftex.def)             Requested size: 199.165pt x 156.48903pt.
+<fig/pareto_example.pdf, id=142, 501.875pt x 401.5pt>
+File: fig/pareto_example.pdf Graphic file (type pdf)
+<use fig/pareto_example.pdf>
+Package pdftex.def Info: fig/pareto_example.pdf  used on input line 175.
+(pdftex.def)             Requested size: 199.16888pt x 156.49246pt.
+
+[3]
+<fig/mesh-frame.jpg, id=166, 632.3625pt x 347.2975pt>
+File: fig/mesh-frame.jpg Graphic file (type jpg)
+<use fig/mesh-frame.jpg>
+Package pdftex.def Info: fig/mesh-frame.jpg  used on input line 198.
+(pdftex.def)             Requested size: 256.0748pt x 140.63881pt.
+ [4 <./fig/bimadsmap.png> <./fig/pareto_example.pdf>]
+Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
+put line 217.
+
+
+LaTeX Warning: The counter will not be printed.
+             The label is: - on input line 228.
+
+
+LaTeX Warning: The counter will not be printed.
+             The label is:  on input line 234.
+
+
+LaTeX Warning: The counter will not be printed.
+             The label is:  on input line 238.
+
+[5 <./fig/mesh-frame.jpg>]
+<fig/ref.jpg, id=193, 477.785pt x 388.45125pt>
+File: fig/ref.jpg Graphic file (type jpg)
+<use fig/ref.jpg>
+Package pdftex.def Info: fig/ref.jpg  used on input line 251.
+(pdftex.def)             Requested size: 213.39008pt x 170.71754pt.
+<fig/dt2.pdf, id=195, 401.5pt x 401.5pt>
+File: fig/dt2.pdf Graphic file (type pdf)
+<use fig/dt2.pdf>
+Package pdftex.def Info: fig/dt2.pdf  used on input line 254.
+(pdftex.def)             Requested size: 213.40048pt x 170.71794pt.
+ [6]
+<fig/level.jpg, id=219, 563.10374pt x 466.74374pt>
+File: fig/level.jpg Graphic file (type jpg)
+<use fig/level.jpg>
+Package pdftex.def Info: fig/level.jpg  used on input line 273.
+(pdftex.def)             Requested size: 213.39737pt x 170.71259pt.
+<fig/bimads1.jpg, id=220, 434.62375pt x 354.32375pt>
+File: fig/bimads1.jpg Graphic file (type jpg)
+<use fig/bimads1.jpg>
+Package pdftex.def Info: fig/bimads1.jpg  used on input line 276.
+(pdftex.def)             Requested size: 213.39856pt x 170.71684pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[7 <./fig/ref.jpg> <./fig/dt2.pdf>]
+Overfull \hbox (4.21284pt too wide) in paragraph at lines 287--288
+[][]\OT1/pcr/m/n/10.95 NOMAD-3.9 C++ []\OT1/ptm/m/n/10.95 will be used as a ben
+ch-mark to eval-u-ate the per-for-mance of Bi-MADS in [][]\OT1/pcr/m/n/10.95 Di
+rectSearc-
+ []
+
+[8 <./fig/level.jpg> <./fig/bimads1.jpg>]
+<fig/hv_eg.png, id=257, 359.84438pt x 269.50688pt>
+File: fig/hv_eg.png Graphic file (type png)
+<use fig/hv_eg.png>
+Package pdftex.def Info: fig/hv_eg.png  used on input line 304.
+(pdftex.def)             Requested size: 227.62204pt x 170.4852pt.
+ [9 <./fig/hv_eg.png>]
+Overfull \hbox (3.89612pt too wide) in paragraph at lines 311--312
+\OT1/ptm/m/n/10.95 To com-pare the per-for-mance be-tween [][]\OT1/pcr/m/n/10.9
+5 NOMAD []\OT1/ptm/m/n/10.95 and [][]\OT1/pcr/m/n/10.95 DirectSearch.jl[]\OT1/p
+tm/m/n/10.95 , the Ju-lia pack-age [][]\OT1/pcr/m/n/10.95 BenchmarkPr-
+ []
+
+<fig/test_fail.png, id=274, 416.55624pt x 84.315pt>
+File: fig/test_fail.png Graphic file (type png)
+<use fig/test_fail.png>
+Package pdftex.def Info: fig/test_fail.png  used on input line 331.
+(pdftex.def)             Requested size: 398.33858pt x 80.6314pt.
+[10]
+\openout7 = `Yuanyuan_Zhang_Final_Thesis.pyg'.
+
+ (./_minted-Yuanyuan_Zhang_Final_Thesis/default-pyg-prefix.pygstyle)
+(./_minted-Yuanyuan_Zhang_Final_Thesis/default.pygstyle)
+(./_minted-Yuanyuan_Zhang_Final_Thesis/7D3763942FCF87FC83A5B41CF6CB0EE8D64CA283
+22A2837811C99F2137B99178.pygtex
+LaTeX Font Info:    Font shape `OT1/pcr/bx/n' in size <10> not available
+(Font)              Font shape `OT1/pcr/b/n' tried instead on input line 2.
+) [11 <./fig/test_fail.png>]
+<fig/initialization.pdf, id=295, 354.96916pt x 300.42839pt>
+File: fig/initialization.pdf Graphic file (type pdf)
+<use fig/initialization.pdf>
+Package pdftex.def Info: fig/initialization.pdf  used on input line 356.
+(pdftex.def)             Requested size: 398.33858pt x 337.16054pt.
+pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) ha
+s been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.357 ...  \caption{Flow chart for Initialization}
+                                                   [12 <./fig/initialization.pd
+f>]
+\openout7 = `Yuanyuan_Zhang_Final_Thesis.pyg'.
+
+
+(./_minted-Yuanyuan_Zhang_Final_Thesis/23E5901C52EA70E02112FE856232A2A8D64CA283
+22A2837811C99F2137B99178.pygtex
+LaTeX Font Info:    Font shape `OT1/pcr/m/it' in size <10> not available
+(Font)              Font shape `OT1/pcr/m/sl' tried instead on input line 6.
+)
+\openout9 = `Yuanyuan_Zhang_Final_Thesis-1.cpt'.
+
+Package hyperref Info: bookmark level for unknown listing defaults to 0 on inpu
+t line 384.
+ (./Yuanyuan_Zhang_Final_Thesis-1.cpt)
+<fig/main_iter.pdf, id=318, 475.67712pt x 396.99318pt>
+File: fig/main_iter.pdf Graphic file (type pdf)
+<use fig/main_iter.pdf>
+Package pdftex.def Info: fig/main_iter.pdf  used on input line 397.
+(pdftex.def)             Requested size: 455.24408pt x 379.9521pt.
+pdfTeX warning (ext4): destination with the same identifier (name{figure.2}) ha
+s been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.398 ...  \caption{Flow chart for Main Iteration}
+                                                   [13]
+\openout7 = `Yuanyuan_Zhang_Final_Thesis.pyg'.
+
+
+(./_minted-Yuanyuan_Zhang_Final_Thesis/91257C987385D43396E65C12B4EBFD39D64CA283
+22A2837811C99F2137B99178.pygtex)
+\openout9 = `Yuanyuan_Zhang_Final_Thesis-2.cpt'.
+
+ (./Yuanyuan_Zhang_Final_Thesis-2.cpt) [14 <./fig/main_iter.pdf>] [15]
+\openout7 = `Yuanyuan_Zhang_Final_Thesis.pyg'.
+
+
+(./_minted-Yuanyuan_Zhang_Final_Thesis/509B4E1873F5D4C1B2C86A8D0E672924D64CA283
+22A2837811C99F2137B99178.pygtex)
+Overfull \hbox (3.88336pt too wide) in paragraph at lines 470--472
+\OT1/ptm/m/n/10.95 signs for the first four Bi-MADS stop-ping con-di-tions fol-
+low the same struc-ture as in old [][]\OT1/pcr/m/n/10.95 DirectSearch.jl[]\OT1/
+ptm/m/n/10.95 ,
+ []
+
+[16]
+Overfull \hbox (8.25345pt too wide) in paragraph at lines 484--485
+\OT1/ptm/m/n/10.95 lim-its, while the other two should be added man-u-ally. The
+se con-di-tions could be added us-ing [][]\OT1/pcr/m/n/10.95 AddStopping-
+ []
+
+[17]
+<fig/test_tree.pdf, id=370, 748.10791pt x 277.1725pt>
+File: fig/test_tree.pdf Graphic file (type pdf)
+<use fig/test_tree.pdf>
+Package pdftex.def Info: fig/test_tree.pdf  used on input line 498.
+(pdftex.def)             Requested size: 455.24408pt x 168.66896pt.
+pdfTeX warning (ext4): destination with the same identifier (name{figure.3}) ha
+s been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.499     \caption{Unit test tree}
+                                   [18 <./fig/test_tree.pdf>] [19]
+<fig/block.pdf, id=402, 290.63483pt x 77.74947pt>
+File: fig/block.pdf Graphic file (type pdf)
+<use fig/block.pdf>
+Package pdftex.def Info: fig/block.pdf  used on input line 546.
+(pdftex.def)             Requested size: 369.88582pt x 98.95306pt.
+pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) ha
+s been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.547 ...ram for the system with a PID controller}
+                                                  
+<fig/system.pdf, id=407, 437.85983pt x 183.78561pt>
+File: fig/system.pdf Graphic file (type pdf)
+<use fig/system.pdf>
+Package pdftex.def Info: fig/system.pdf  used on input line 567.
+(pdftex.def)             Requested size: 369.88582pt x 155.25941pt.
+\openout9 = `Yuanyuan_Zhang_Final_Thesis-3.cpt'.
+
+pdfTeX warning (ext4): destination with the same identifier (name{figure.2}) ha
+s been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.568 ...stem simulation in Julia for \verb|Tref|}
+                                                  
+(./Yuanyuan_Zhang_Final_Thesis-3.cpt)
+\openout7 = `Yuanyuan_Zhang_Final_Thesis.pyg'.
+
+
+(./_minted-Yuanyuan_Zhang_Final_Thesis/A9B2F9DEF55BB207BC77D8B61D286A5FD64CA283
+22A2837811C99F2137B99178.pygtex [20 <./fig/block.pdf>]) [21 <./fig/system.pdf>]
+\openout7 = `Yuanyuan_Zhang_Final_Thesis.pyg'.
+
+
+(./_minted-Yuanyuan_Zhang_Final_Thesis/9130333E404C2C480202D1A304BB67F8D64CA283
+22A2837811C99F2137B99178.pygtex)
+\openout7 = `Yuanyuan_Zhang_Final_Thesis.pyg'.
+
+
+(./_minted-Yuanyuan_Zhang_Final_Thesis/F3AB7DB8F66EAF95BF8932ED26828A91D64CA283
+22A2837811C99F2137B99178.pygtex)
+\openout9 = `Yuanyuan_Zhang_Final_Thesis-4.cpt'.
+
+ (./Yuanyuan_Zhang_Final_Thesis-4.cpt) [22]
+[23]
+<fig/pareto1.pdf, id=495, 501.875pt x 401.5pt>
+File: fig/pareto1.pdf Graphic file (type pdf)
+<use fig/pareto1.pdf>
+Package pdftex.def Info: fig/pareto1.pdf  used on input line 666.
+(pdftex.def)             Requested size: 227.62204pt x 182.10077pt.
+<fig/pareto2.pdf, id=496, 501.875pt x 401.5pt>
+File: fig/pareto2.pdf Graphic file (type pdf)
+<use fig/pareto2.pdf>
+Package pdftex.def Info: fig/pareto2.pdf  used on input line 668.
+(pdftex.def)             Requested size: 227.62204pt x 182.10077pt.
+pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) ha
+s been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.669 ...Pareto front for the building case study}
+                                                  
+Overfull \hbox (23.77306pt too wide) in paragraph at lines 676--687
+ [][][] 
+ []
+
+<fig/best.pdf, id=499, 501.875pt x 401.5pt>
+File: fig/best.pdf Graphic file (type pdf)
+<use fig/best.pdf>
+Package pdftex.def Info: fig/best.pdf  used on input line 693.
+(pdftex.def)             Requested size: 227.62204pt x 182.10077pt.
+<fig/medium.pdf, id=500, 501.875pt x 401.5pt>
+File: fig/medium.pdf Graphic file (type pdf)
+<use fig/medium.pdf>
+Package pdftex.def Info: fig/medium.pdf  used on input line 695.
+(pdftex.def)             Requested size: 227.62204pt x 182.10077pt.
+pdfTeX warning (ext4): destination with the same identifier (name{figure.2}) ha
+s been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.696   \caption{Time responses for point 4 and 5}
+                                                   [24 <./fig/pareto1.pdf> <./f
+ig/pareto2.pdf>] [25 <./fig/best.pdf> <./fig/medium.pdf>]
+\openout9 = `Yuanyuan_Zhang_Final_Thesis-5.cpt'.
+
+\openout9 = `Yuanyuan_Zhang_Final_Thesis-6.cpt'.
+
+
+(./Yuanyuan_Zhang_Final_Thesis-6.cpt
+<fig/FAR1.pdf, id=528, 401.5pt x 401.5pt>
+File: fig/FAR1.pdf Graphic file (type pdf)
+<use fig/FAR1.pdf>
+Package pdftex.def Info: fig/FAR1.pdf  used on input line 2.
+(pdftex.def)             Requested size: 227.62204pt x 227.62596pt.
+) (./Yuanyuan_Zhang_Final_Thesis-5.cpt)
+\openout9 = `Yuanyuan_Zhang_Final_Thesis-7.cpt'.
+
+\openout9 = `Yuanyuan_Zhang_Final_Thesis-8.cpt'.
+
+
+(./Yuanyuan_Zhang_Final_Thesis-8.cpt
+<fig/FAR1_nomad.pdf, id=529, 401.5pt x 401.5pt>
+File: fig/FAR1_nomad.pdf Graphic file (type pdf)
+<use fig/FAR1_nomad.pdf>
+Package pdftex.def Info: fig/FAR1_nomad.pdf  used on input line 2.
+(pdftex.def)             Requested size: 227.62204pt x 227.62596pt.
+) (./Yuanyuan_Zhang_Final_Thesis-7.cpt)pdfTeX warning (ext4): destination with 
+the same identifier (name{figure.3}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.730 ...nt with both convex and concave elements}
+                                                  
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 735.
+
+
+Overfull \hbox (5.862pt too wide) in paragraph at lines 768--769
+[]\OT1/ptm/m/n/10.95 According to Ta-ble []5.3[], the per-for-mance pro-files a
+re plot-ted in Fig-ure []5.4[] by [][]\OT1/pcr/m/n/10.95 BenchmarkProfiles.jl
+ []
+
+[26] [27]
+<fig/time_perfom.pdf, id=566, 501.875pt x 401.5pt>
+File: fig/time_perfom.pdf Graphic file (type pdf)
+<use fig/time_perfom.pdf>
+Package pdftex.def Info: fig/time_perfom.pdf  used on input line 773.
+(pdftex.def)             Requested size: 227.62204pt x 182.10077pt.
+<fig/bb_perfom.pdf, id=567, 501.875pt x 401.5pt>
+File: fig/bb_perfom.pdf Graphic file (type pdf)
+<use fig/bb_perfom.pdf>
+Package pdftex.def Info: fig/bb_perfom.pdf  used on input line 775.
+(pdftex.def)             Requested size: 227.62204pt x 182.10077pt.
+pdfTeX warning (ext4): destination with the same identifier (name{figure.4}) ha
+s been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.776   \caption{Performance profiles}
+                                       [28 <./fig/FAR1.pdf> <./fig/FAR1_nomad.p
+df>] [29 <./fig/time_perfom.pdf> <./fig/bb_perfom.pdf>]
+<fig/unit_test.png, id=592, 314.17375pt x 53.19875pt>
+File: fig/unit_test.png Graphic file (type png)
+<use fig/unit_test.png>
+Package pdftex.def Info: fig/unit_test.png  used on input line 798.
+(pdftex.def)             Requested size: 227.62204pt x 38.54253pt.
+pdfTeX warning (ext4): destination with the same identifier (name{figure.5}) ha
+s been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.799     \caption{Result of the unit test}
+                                            [30 <./fig/unit_test.png>]
+Overfull \hbox (11.19972pt too wide) in paragraph at lines 820--821
+\OT1/ptm/m/n/10.95 type with the same names-pace [][]\OT1/pcr/m/n/10.95 DSProbl
+em []\OT1/ptm/m/n/10.95 can be de-signed, which in-her-its from [][]\OT1/pcr/m/
+n/10.95 AbstractProblem[]\OT1/ptm/m/n/10.95 .
+ []
+
+[31] (./Yuanyuan_Zhang_Final_Thesis.bbl
+Underfull \hbox (badness 2707) in paragraph at lines 25--27
+[]\OT1/ptm/m/n/10 J. Lar-son, M. Menick-elly, and S. M. Wild, ``Derivative-free
+ op-ti-miza-tion meth-ods,'' \OT1/ptm/m/it/10 arXiv preprint
+ []
+
+[32]) [33]
+\openout7 = `Yuanyuan_Zhang_Final_Thesis.pyg'.
+
+
+(./_minted-Yuanyuan_Zhang_Final_Thesis/6D19DDF9D5F949F18AA537783255FDD4D64CA283
+22A2837811C99F2137B99178.pygtex)
+\openout7 = `Yuanyuan_Zhang_Final_Thesis.pyg'.
+
+
+(./_minted-Yuanyuan_Zhang_Final_Thesis/9F6F0EDCBED983B97D2600B3FBC37CADD64CA283
+22A2837811C99F2137B99178.pygtex)
+\openout7 = `Yuanyuan_Zhang_Final_Thesis.pyg'.
+
+
+(./_minted-Yuanyuan_Zhang_Final_Thesis/D27BE1FA7F383B5A0AA8ED5A3500F95DD64CA283
+22A2837811C99F2137B99178.pygtex)
+\openout7 = `Yuanyuan_Zhang_Final_Thesis.pyg'.
+
+
+(./_minted-Yuanyuan_Zhang_Final_Thesis/A701CD21A5855BBD476749B408DAEA17D64CA283
+22A2837811C99F2137B99178.pygtex)
+\openout7 = `Yuanyuan_Zhang_Final_Thesis.pyg'.
+
+
+(./_minted-Yuanyuan_Zhang_Final_Thesis/73A59CD986ACB3E2D2353D9A16C06DDDD64CA283
+22A2837811C99F2137B99178.pygtex) [34]
+<fig/cvx1.pdf, id=630, 401.5pt x 401.5pt>
+File: fig/cvx1.pdf Graphic file (type pdf)
+<use fig/cvx1.pdf>
+Package pdftex.def Info: fig/cvx1.pdf  used on input line 887.
+(pdftex.def)             Requested size: 341.43306pt x 341.45427pt.
+\openout9 = `Yuanyuan_Zhang_Final_Thesis-9.cpt'.
+
+pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) ha
+s been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.888 ... \cprotect\caption{Pareto front for ZDT1}
+                                                  
+(./Yuanyuan_Zhang_Final_Thesis-9.cpt) [35 <./fig/cvx1.pdf>]
+<fig/ncvx1.pdf, id=639, 401.5pt x 401.5pt>
+File: fig/ncvx1.pdf Graphic file (type pdf)
+<use fig/ncvx1.pdf>
+Package pdftex.def Info: fig/ncvx1.pdf  used on input line 910.
+(pdftex.def)             Requested size: 341.43306pt x 341.45427pt.
+\openout9 = `Yuanyuan_Zhang_Final_Thesis-10.cpt'.
+
+pdfTeX warning (ext4): destination with the same identifier (name{figure.2}) ha
+s been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.911 ... \cprotect\caption{Pareto front for ZDT2}
+                                                  
+(./Yuanyuan_Zhang_Final_Thesis-10.cpt) [36 <./fig/ncvx1.pdf>]
+<fig/dt1.pdf, id=648, 401.5pt x 401.5pt>
+File: fig/dt1.pdf Graphic file (type pdf)
+<use fig/dt1.pdf>
+Package pdftex.def Info: fig/dt1.pdf  used on input line 932.
+(pdftex.def)             Requested size: 341.43306pt x 341.45427pt.
+\openout9 = `Yuanyuan_Zhang_Final_Thesis-11.cpt'.
+
+pdfTeX warning (ext4): destination with the same identifier (name{figure.3}) ha
+s been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.933 ... \cprotect\caption{Pareto front for ZDT3}
+                                                  
+(./Yuanyuan_Zhang_Final_Thesis-11.cpt) [37 <./fig/dt1.pdf>]
+<fig/mmod.pdf, id=657, 401.5pt x 401.5pt>
+File: fig/mmod.pdf Graphic file (type pdf)
+<use fig/mmod.pdf>
+Package pdftex.def Info: fig/mmod.pdf  used on input line 954.
+(pdftex.def)             Requested size: 341.43306pt x 341.45427pt.
+\openout9 = `Yuanyuan_Zhang_Final_Thesis-12.cpt'.
+
+pdfTeX warning (ext4): destination with the same identifier (name{figure.4}) ha
+s been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.955 ... \cprotect\caption{Pareto front for ZDT4}
+                                                  
+(./Yuanyuan_Zhang_Final_Thesis-12.cpt) [38 <./fig/mmod.pdf>]
+<fig/nuni1.pdf, id=666, 401.5pt x 401.5pt>
+File: fig/nuni1.pdf Graphic file (type pdf)
+<use fig/nuni1.pdf>
+Package pdftex.def Info: fig/nuni1.pdf  used on input line 979.
+(pdftex.def)             Requested size: 341.43306pt x 341.45427pt.
+\openout9 = `Yuanyuan_Zhang_Final_Thesis-13.cpt'.
+
+pdfTeX warning (ext4): destination with the same identifier (name{figure.5}) ha
+s been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.980 ... \cprotect\caption{Pareto front for ZDT6}
+                                                  
+(./Yuanyuan_Zhang_Final_Thesis-13.cpt) [39 <./fig/nuni1.pdf>]
+<fig/cvx2.pdf, id=676, 401.5pt x 401.5pt>
+File: fig/cvx2.pdf Graphic file (type pdf)
+<use fig/cvx2.pdf>
+Package pdftex.def Info: fig/cvx2.pdf  used on input line 1002.
+(pdftex.def)             Requested size: 341.43306pt x 341.45427pt.
+\openout9 = `Yuanyuan_Zhang_Final_Thesis-14.cpt'.
+
+pdfTeX warning (ext4): destination with the same identifier (name{figure.6}) ha
+s been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.1003 ...\cprotect\caption{Pareto front for F5.1}
+                                                  
+(./Yuanyuan_Zhang_Final_Thesis-14.cpt) [40 <./fig/cvx2.pdf>]
+<fig/ncvx2.pdf, id=685, 401.5pt x 401.5pt>
+File: fig/ncvx2.pdf Graphic file (type pdf)
+<use fig/ncvx2.pdf>
+Package pdftex.def Info: fig/ncvx2.pdf  used on input line 1024.
+(pdftex.def)             Requested size: 341.43306pt x 341.45427pt.
+\openout9 = `Yuanyuan_Zhang_Final_Thesis-15.cpt'.
+
+
+(./Yuanyuan_Zhang_Final_Thesis-15.cpt) [41 <./fig/ncvx2.pdf>]
+File: fig/dt2.pdf Graphic file (type pdf)
+<use fig/dt2.pdf>
+Package pdftex.def Info: fig/dt2.pdf  used on input line 1045.
+(pdftex.def)             Requested size: 341.43306pt x 341.45427pt.
+\openout9 = `Yuanyuan_Zhang_Final_Thesis-16.cpt'.
+
+
+(./Yuanyuan_Zhang_Final_Thesis-16.cpt) [42]
+<fig/bias.pdf, id=703, 401.5pt x 401.5pt>
+File: fig/bias.pdf Graphic file (type pdf)
+<use fig/bias.pdf>
+Package pdftex.def Info: fig/bias.pdf  used on input line 1068.
+(pdftex.def)             Requested size: 341.43306pt x 341.45427pt.
+\openout9 = `Yuanyuan_Zhang_Final_Thesis-17.cpt'.
+
+
+(./Yuanyuan_Zhang_Final_Thesis-17.cpt) [43 <./fig/bias.pdf>]
+File: fig/bias.pdf Graphic file (type pdf)
+<use fig/bias.pdf>
+Package pdftex.def Info: fig/bias.pdf  used on input line 1092.
+(pdftex.def)             Requested size: 341.43306pt x 341.45427pt.
+\openout9 = `Yuanyuan_Zhang_Final_Thesis-18.cpt'.
+
+
+(./Yuanyuan_Zhang_Final_Thesis-18.cpt) [44]
+<fig/F1.pdf, id=721, 401.5pt x 401.5pt>
+File: fig/F1.pdf Graphic file (type pdf)
+<use fig/F1.pdf>
+Package pdftex.def Info: fig/F1.pdf  used on input line 1112.
+(pdftex.def)             Requested size: 341.43306pt x 341.45427pt.
+\openout9 = `Yuanyuan_Zhang_Final_Thesis-19.cpt'.
+
+
+(./Yuanyuan_Zhang_Final_Thesis-19.cpt) [45 <./fig/F1.pdf>]
+<fig/DTLZ1n2.pdf, id=732, 401.5pt x 401.5pt>
+File: fig/DTLZ1n2.pdf Graphic file (type pdf)
+<use fig/DTLZ1n2.pdf>
+Package pdftex.def Info: fig/DTLZ1n2.pdf  used on input line 1133.
+(pdftex.def)             Requested size: 341.43306pt x 341.45427pt.
+\openout9 = `Yuanyuan_Zhang_Final_Thesis-20.cpt'.
+
+
+(./Yuanyuan_Zhang_Final_Thesis-20.cpt) [46 <./fig/DTLZ1n2.pdf>]
+<fig/mop2.pdf, id=742, 401.5pt x 401.5pt>
+File: fig/mop2.pdf Graphic file (type pdf)
+<use fig/mop2.pdf>
+Package pdftex.def Info: fig/mop2.pdf  used on input line 1156.
+(pdftex.def)             Requested size: 341.43306pt x 341.45427pt.
+\openout9 = `Yuanyuan_Zhang_Final_Thesis-21.cpt'.
+
+
+(./Yuanyuan_Zhang_Final_Thesis-21.cpt) [47 <./fig/mop2.pdf>]
+<fig/mop3.pdf, id=753, 401.5pt x 401.5pt>
+File: fig/mop3.pdf Graphic file (type pdf)
+<use fig/mop3.pdf>
+Package pdftex.def Info: fig/mop3.pdf  used on input line 1183.
+(pdftex.def)             Requested size: 312.9803pt x 313.00331pt.
+\openout9 = `Yuanyuan_Zhang_Final_Thesis-22.cpt'.
+
+
+(./Yuanyuan_Zhang_Final_Thesis-22.cpt) [48 <./fig/mop3.pdf>]
+<fig/mop4.pdf, id=763, 401.5pt x 401.5pt>
+File: fig/mop4.pdf Graphic file (type pdf)
+<use fig/mop4.pdf>
+Package pdftex.def Info: fig/mop4.pdf  used on input line 1206.
+(pdftex.def)             Requested size: 341.43306pt x 341.45427pt.
+\openout9 = `Yuanyuan_Zhang_Final_Thesis-23.cpt'.
+
+
+(./Yuanyuan_Zhang_Final_Thesis-23.cpt) [49 <./fig/mop4.pdf>]
+<fig/mop6.pdf, id=772, 401.5pt x 401.5pt>
+File: fig/mop6.pdf Graphic file (type pdf)
+<use fig/mop6.pdf>
+Package pdftex.def Info: fig/mop6.pdf  used on input line 1228.
+(pdftex.def)             Requested size: 341.43306pt x 341.45427pt.
+\openout9 = `Yuanyuan_Zhang_Final_Thesis-24.cpt'.
+
+
+(./Yuanyuan_Zhang_Final_Thesis-24.cpt) [50 <./fig/mop6.pdf>]
+<fig/FES1.pdf, id=782, 401.5pt x 401.5pt>
+File: fig/FES1.pdf Graphic file (type pdf)
+<use fig/FES1.pdf>
+Package pdftex.def Info: fig/FES1.pdf  used on input line 1250.
+(pdftex.def)             Requested size: 341.43306pt x 341.45427pt.
+\openout9 = `Yuanyuan_Zhang_Final_Thesis-25.cpt'.
+
+
+(./Yuanyuan_Zhang_Final_Thesis-25.cpt) [51 <./fig/FES1.pdf>]
+<fig/QV1.pdf, id=793, 401.5pt x 401.5pt>
+File: fig/QV1.pdf Graphic file (type pdf)
+<use fig/QV1.pdf>
+Package pdftex.def Info: fig/QV1.pdf  used on input line 1272.
+(pdftex.def)             Requested size: 341.43306pt x 341.45427pt.
+\openout9 = `Yuanyuan_Zhang_Final_Thesis-26.cpt'.
+
+
+(./Yuanyuan_Zhang_Final_Thesis-26.cpt) [52 <./fig/QV1.pdf>]
+<fig/OKA1.pdf, id=803, 401.5pt x 401.5pt>
+File: fig/OKA1.pdf Graphic file (type pdf)
+<use fig/OKA1.pdf>
+Package pdftex.def Info: fig/OKA1.pdf  used on input line 1297.
+(pdftex.def)             Requested size: 341.43306pt x 341.45427pt.
+\openout9 = `Yuanyuan_Zhang_Final_Thesis-27.cpt'.
+
+
+(./Yuanyuan_Zhang_Final_Thesis-27.cpt) [53 <./fig/OKA1.pdf>]
+File: fig/FAR1.pdf Graphic file (type pdf)
+<use fig/FAR1.pdf>
+Package pdftex.def Info: fig/FAR1.pdf  used on input line 1323.
+(pdftex.def)             Requested size: 284.52756pt x 284.54623pt.
+\openout9 = `Yuanyuan_Zhang_Final_Thesis-28.cpt'.
+
+
+(./Yuanyuan_Zhang_Final_Thesis-28.cpt) [54]
+Overfull \hbox (12.05795pt too wide) in paragraph at lines 1338--1348
+ [][][] 
+ []
+
+[55]
+<fig/DS_result_0.pdf, id=826, 292.1896pt x 402.10225pt>
+File: fig/DS_result_0.pdf Graphic file (type pdf)
+<use fig/DS_result_0.pdf>
+Package pdftex.def Info: fig/DS_result_0.pdf  used on input line 1354.
+(pdftex.def)             Requested size: 125.19194pt x 172.2809pt.
+<fig/DS_result_1.pdf, id=827, 290.73921pt x 399.88597pt>
+File: fig/DS_result_1.pdf Graphic file (type pdf)
+<use fig/DS_result_1.pdf>
+Package pdftex.def Info: fig/DS_result_1.pdf  used on input line 1356.
+(pdftex.def)             Requested size: 125.19194pt x 172.19168pt.
+<fig/DS_result_2.pdf, id=828, 290.26341pt x 401.99887pt>
+File: fig/DS_result_2.pdf Graphic file (type pdf)
+<use fig/DS_result_2.pdf>
+Package pdftex.def Info: fig/DS_result_2.pdf  used on input line 1358.
+(pdftex.def)             Requested size: 125.19194pt x 173.38367pt.
+<fig/DS_result_3.pdf, id=829, 291.45486pt x 401.95871pt>
+File: fig/DS_result_3.pdf Graphic file (type pdf)
+<use fig/DS_result_3.pdf>
+Package pdftex.def Info: fig/DS_result_3.pdf  used on input line 1360.
+(pdftex.def)             Requested size: 125.19194pt x 172.65488pt.
+<fig/DS_result_4.pdf, id=830, 291.43279pt x 401.49599pt>
+File: fig/DS_result_4.pdf Graphic file (type pdf)
+<use fig/DS_result_4.pdf>
+Package pdftex.def Info: fig/DS_result_4.pdf  used on input line 1362.
+(pdftex.def)             Requested size: 125.19194pt x 172.46837pt.
+<fig/DS_result_5.pdf, id=831, 291.60745pt x 401.24606pt>
+File: fig/DS_result_5.pdf Graphic file (type pdf)
+<use fig/DS_result_5.pdf>
+Package pdftex.def Info: fig/DS_result_5.pdf  used on input line 1364.
+(pdftex.def)             Requested size: 125.19194pt x 172.26305pt.
+<fig/DS_result_6.pdf, id=832, 291.83829pt x 399.39516pt>
+File: fig/DS_result_6.pdf Graphic file (type pdf)
+<use fig/DS_result_6.pdf>
+Package pdftex.def Info: fig/DS_result_6.pdf  used on input line 1366.
+(pdftex.def)             Requested size: 125.19194pt x 171.32825pt.
+<fig/DS_result_7.pdf, id=833, 289.93016pt x 401.89047pt>
+File: fig/DS_result_7.pdf Graphic file (type pdf)
+<use fig/DS_result_7.pdf>
+Package pdftex.def Info: fig/DS_result_7.pdf  used on input line 1368.
+(pdftex.def)             Requested size: 125.19194pt x 173.53928pt.
+<fig/DS_result_8.pdf, id=834, 290.59166pt x 401.32935pt>
+File: fig/DS_result_8.pdf Graphic file (type pdf)
+<use fig/DS_result_8.pdf>
+Package pdftex.def Info: fig/DS_result_8.pdf  used on input line 1370.
+(pdftex.def)             Requested size: 125.19194pt x 172.89893pt.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1411.
+ [56 <./fig/DS_result_0.pdf> <./fig/DS_result_1.pdf> <./fig/DS_result_2.pdf> <.
+/fig/DS_result_3.pdf> <./fig/DS_result_4.pdf> <./fig/DS_result_5.pdf> <./fig/DS
+_result_6.pdf> <./fig/DS_result_7.pdf> <./fig/DS_result_8.pdf>]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1411.
+
+(./Yuanyuan_Zhang_Final_Thesis.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1411.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 1411.
+runsystem(rm Yuanyuan_Zhang_Final_Thesis.pyg)...executed.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 22468 strings out of 492616
+ 386101 string characters out of 6129481
+ 663531 words of memory out of 5000000
+ 25465 multiletter control sequences out of 15000+600000
+ 49420 words of font info for 120 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 61i,15n,73p,1438b,757s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
+exlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/te
+xlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/tex
+live/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texl
+ive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texliv
+e/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/
+2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/texlive/20
+19/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2019
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2019/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2019/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2019/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2019/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2019/texmf-dist
+/fonts/type1/public/esint-type1/esint10.pfb></usr/local/texlive/2019/texmf-dist
+/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2019/texmf-
+dist/fonts/type1/urw/courier/ucrb8a.pfb></usr/local/texlive/2019/texmf-dist/fon
+ts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1
+/urw/courier/ucrro8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/ti
+mes/utmb8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/times/utmr8a
+.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on Yuanyuan_Zhang_Final_Thesis.pdf (60 pages, 1524955 bytes).
+PDF statistics:
+ 985 PDF objects out of 1000 (max. 8388607)
+ 825 compressed objects within 9 object streams
+ 286 named destinations out of 1000 (max. 500000)
+ 251 words of extra memory for PDF output out of 10000 (max. 10000000)
+

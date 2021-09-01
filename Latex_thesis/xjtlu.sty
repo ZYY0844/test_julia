@@ -1,0 +1,222 @@
+\ProvidesPackage{xjtlu}
+\pagestyle{plain}
+\usepackage{graphicx}
+\usepackage{makeidx}
+\usepackage{nomencl}
+\usepackage{listings}
+\usepackage{pstricks}
+\usepackage{xcolor}
+\usepackage{fancyhdr}
+\usepackage{times}
+\usepackage{epstopdf}
+\usepackage{psfig}
+\usepackage{url}
+\usepackage{epsfig,graphics,psfrag,amssymb}
+\usepackage{float}
+\usepackage{algpseudocode}  
+\usepackage{algorithm}
+\usepackage{amsmath}  
+\usepackage{multirow}
+\usepackage{enumerate}
+\usepackage{setspace}
+\usepackage{bm}
+\usepackage{amsmath,esint,array}
+\usepackage{booktabs} %调整表格线与上下内容的间隔  
+\usepackage{multirow}
+\usepackage[final]{pdfpages}
+\usepackage{fullpage}
+\usepackage{geometry}
+
+%\usepackage[pdfpagelabels]{hyperref}
+\usepackage{geometry} % to change the page dimensions
+\geometry{a4paper} % or letter paper (US) or a5paper or....
+\textheight=235mm
+\textwidth=140mm
+\topmargin=0mm
+\headheight=0mm
+\headsep=0mm
+% These must be changed for double sided output !
+\oddsidemargin=12mm
+\evensidemargin=12mm
+
+%\usepackage[cmintegrals]{newtxmath}
+
+\numberwithin{figure}{section}
+\usepackage{subfigure}
+
+\renewcommand{\thepart}{\arabic{section}}
+
+\renewcommand{\thefigure}{\thesection{}.\arabic{figure}}
+\renewcommand {\thetable} {\thesection{}.\arabic{table}}
+\renewcommand{\theequation}{\arabic{section}.\arabic{equation}}
+\renewcommand{\figurename}{Fig.}
+% \renewcommand{\thesubfigure}{\arabic{figure}.\arabic{subfigure}}
+% \numberwithin{figure}{section}
+% \renewcommand{\thefigure}{\arabic{section}.\arabic{figure}}
+
+\makeindex
+\makeglossary
+
+%Rename the chapter to "Section"
+%\renewcommand{\chaptername}{\textbf{Section}}
+% \renewcommand{\bibname}{Reference}
+
+% \newcommand{\reporttitle}[1]{\newcommand{\rtt}{#1}}
+% \newcommand{\student}[1]{\newcommand{\stu}{#1}}
+% \newcommand{\partner}[1]{\newcommand{\ptn}{#1}}
+% \newcommand{\module}[1]{\newcommand{\modu}{#1}}
+% \newcommand{\teacher}[1]{\newcommand{\lect}{#1}}
+% \newcommand{\ddl}[1]{\newcommand{\dat}{#1}}
+% \newcommand{\IDnumbera}[1]{\newcommand{\IDa}{#1}}
+% \newcommand{\IDnumberb}[1]{\newcommand{\IDb}{#1}}
+% \newcommand{\IDnumberc}[1]{\newcommand{\IDc}{#1}}
+% \newcommand{\group}[1]{\newcommand{\gro}{#1}}
+% \newcommand{\dateoflab}[1]{\newcommand{\dol}{#1}}
+% \newcommand{\partnera}[1]{\newcommand{\ptna}{#1}}
+% \newcommand{\partnerb}[1]{\newcommand{\ptnb}{#1}}
+% \newcommand{\partnerc}[1]{\newcommand{\ptnc}{#1}}
+
+\renewcommand{\arraystretch}{1.8}
+
+\newcommand{\Rom}[1]{\texorpdfstring{\uppercase\expandafter{\romannumeral #1}}\ }
+\newcommand{\rom}[1]{\texorpdfstring{\romannumeral #1}\ }
+
+\newcommand{\figpdf}[3]{
+\begin{figure}[htp]
+\centering
+\includegraphics[width={#3}]{fig/#2.pdf}
+\caption{{#1}}
+\label{fig:#2}
+\end{figure}
+}
+
+\newcommand{\figpng}[3]{
+\begin{figure*}[htp]
+\centering
+\includegraphics[width={#3}]{fig/#2.png}
+\caption{{#1}}
+\label{fig:#2}
+\end{figure}
+}
+
+\newcommand{\figany}[4]{
+\begin{figure}[htp]
+\centering
+\includegraphics[width={#4}]{fig/#2.#3}
+\caption{{#1}}
+\label{fig:#2}
+\end{figure}
+}
+
+% \setlength{\parskip}{2ex plus 0.5ex minus 0.2ex}
+% \setlength{\parindent}{0pt}
+\def\abstract{
+  \begin{center}{
+    \Large\bf Abstract}
+  \end{center}
+  \small
+  %\def\baselinestretch{1.5}
+  \linespread{1.5}
+  \normalsize
+}
+\def\endabstract{
+  \par
+}
+
+\newenvironment{acknowledgements}{
+  \cleardoublepage
+  \begin{center}{
+    \Large \bf Acknowledgements}
+  \end{center}
+  \small
+  \linespread{1.5}
+  \normalsize
+}{\cleardoublepage}
+\def\endacknowledgements{
+  \par
+}
+
+\newcommand{\Fig}[1]{
+Fig. \ref{fig:#1}
+}
+
+\newcommand{\fig}[1]{
+Fig. \ref{fig:#1}
+}
+
+\newcommand{\listwithnum}[1]{
+\begin{enumerate}
+#1
+\end{enumerate}
+}
+\newcommand{\listwithdot}[1]{
+\begin{itemize}
+#1
+\end{itemize}
+}
+
+
+%Code box setup
+\lstset{
+    columns=fixed,       
+    numbers=left, 
+    frame=single,
+    backgroundcolor=\color[RGB]{245,245,244},
+    keywordstyle=\color[RGB]{40,40,255},
+    numberstyle=\footnotesize\color{darkgray},
+    commentstyle=\it\color[RGB]{20,100,100},                % 设置代码注释的格式
+    stringstyle=\ttfamily\color[RGB]{0,120,0},   % 设置字符串格式
+    showstringspaces=false,                              % 不显示字符串中的空格
+    basicstyle=\ttfamily，
+}
+
+\newcommand{\ccode}[1]{
+	\lstinputlisting[language=c++]{code/#1}
+
+}
+
+\newcommand{\matcode}[1]{
+    \lstinputlisting[language=matlab]{code/#1}
+
+}
+
+
+\lstset{
+    columns=fixed,       
+    numbers=left, 
+    frame=single,
+    backgroundcolor=\color[RGB]{245,245,244},
+    keywordstyle=\color[RGB]{40,40,255},
+    numberstyle=\footnotesize\color{darkgray},
+    commentstyle=\it\color[RGB]{20,100,100},                % 设置代码注释的格式
+    stringstyle=\ttfamily\color[RGB]{0,120,0},   % 设置字符串格式
+    showstringspaces=false,                              % 不显示字符串中的空格
+    basicstyle=\ttfamily，
+}
+
+
+%\usepackage[cmintegrals]{newtxmath}
+
+\renewcommand{\thefigure}{\thesection{}.\arabic{figure}}
+\renewcommand {\thetable} {\thesection{}.\arabic{table}}
+\renewcommand{\theequation}{\arabic{section}.\arabic{equation}}
+\renewcommand{\figurename}{Fig.}
+
+
+
+
+
+% Add a period to the end of an abbreviation unless there's one
+% already, then \xspace.
+\makeatletter
+\DeclareRobustCommand\onedot{\futurelet\@let@token\@onedot}
+\def\@onedot{\ifx\@let@token.\else.\null\fi\xspace}
+
+\def\eg{\emph{e.g}\onedot} \def\Eg{\emph{E.g}\onedot}
+\def\ie{\emph{i.e}\onedot} \def\Ie{\emph{I.e}\onedot}
+\def\cf{\emph{c.f}\onedot} \def\Cf{\emph{C.f}\onedot}
+\def\etc{\emph{etc}\onedot} \def\vs{\emph{vs}\onedot}
+\def\wrt{w.r.t\onedot} \def\dof{d.o.f\onedot}
+\def\etal{\emph{et al}\onedot}
+\makeatother
+

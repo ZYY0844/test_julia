@@ -1,0 +1,7 @@
+\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8}]
+  \PYG{k}{function} \PYG{n}{Building\PYGZus{}bimads}\PYG{p}{(}\PYG{n}{p}\PYG{p}{)}
+      \PYG{n}{IAE}\PYG{p}{(}\PYG{n}{p}\PYG{p}{)}\PYG{o}{=}\PYG{n}{mean}\PYG{p}{(}\PYG{n}{abs}\PYG{p}{,} \PYG{n}{ref} \PYG{o}{.\PYGZhy{}} \PYG{p}{(}\PYG{n}{Tref}\PYG{p}{(}\PYG{n}{p}\PYG{p}{)} \PYG{o}{.+} \PYG{n}{Tdis}\PYG{p}{(}\PYG{n}{p}\PYG{p}{)}\PYG{p}{)}\PYG{p}{)}  \PYG{c}{\PYGZsh{} IAE}
+      \PYG{n}{sen}\PYG{p}{(}\PYG{n}{p}\PYG{p}{)}\PYG{o}{=}\PYG{n}{Disturbance}\PYG{p}{(}\PYG{n}{p}\PYG{p}{)} \PYG{c}{\PYGZsh{} Maximum sensitivity}
+      \PYG{k}{return} \PYG{p}{[}\PYG{n}{IAE}\PYG{p}{,} \PYG{n}{sen}\PYG{p}{]}
+  \PYG{k}{end}
+\end{Verbatim}

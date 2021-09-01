@@ -1,0 +1,3 @@
+\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8}]
+        \PYG{n}{fig}\PYG{o}{=}\PYG{n}{plot\PYGZus{}Bpoint}\PYG{p}{(}\PYG{n}{result}\PYG{p}{)}
+\end{Verbatim}

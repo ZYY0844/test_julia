@@ -1,0 +1,17 @@
+\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8}]
+    \PYG{l+s}{\PYGZdq{}\PYGZdq{}\PYGZdq{}}
+\PYG{l+s}{ }\PYG{l+s}{ }\PYG{l+s}{ }\PYG{l+s}{ }\PYG{l+s}{p}\PYG{l+s}{o}\PYG{l+s}{i}\PYG{l+s}{n}\PYG{l+s}{t}\PYG{l+s}{s}\PYG{l+s}{ }\PYG{l+s}{f}\PYG{l+s}{o}\PYG{l+s}{r}\PYG{l+s}{ }\PYG{l+s}{B}\PYG{l+s}{i}\PYG{l+s}{M}\PYG{l+s}{A}\PYG{l+s}{D}\PYG{l+s}{S}\PYG{l+s}{ }\PYG{l+s}{A}\PYG{l+s}{l}\PYG{l+s}{g}\PYG{l+s}{o}\PYG{l+s}{ }\PYG{l+s}{i}\PYG{l+s}{n}\PYG{l+s}{ }\PYG{l+s}{o}\PYG{l+s}{b}\PYG{l+s}{j}\PYG{l+s}{e}\PYG{l+s}{c}\PYG{l+s}{t}\PYG{l+s}{i}\PYG{l+s}{v}\PYG{l+s}{e}\PYG{l+s}{ }\PYG{l+s}{s}\PYG{l+s}{p}\PYG{l+s}{a}\PYG{l+s}{c}\PYG{l+s}{e}
+\PYG{l+s}{ }\PYG{l+s}{ }\PYG{l+s}{ }\PYG{l+s}{ }\PYG{l+s}{\PYGZdq{}\PYGZdq{}\PYGZdq{}}
+    \PYG{k}{mutable} \PYG{k}{struct} \PYG{n}{B\PYGZus{}points}
+        \PYG{n}{cost}\PYG{o}{::}\PYG{k+kt}{Vector}\PYG{p}{\PYGZob{}}\PYG{k+kt}{Float64}\PYG{p}{\PYGZcb{}} \PYG{c}{\PYGZsh{}f1 and f2 value in objective space}
+        \PYG{n}{x\PYGZus{}now}\PYG{o}{::}\PYG{k+kt}{Vector}\PYG{p}{\PYGZob{}}\PYG{k+kt}{Float64}\PYG{p}{\PYGZcb{}}\PYG{c}{\PYGZsh{} current variable}
+        \PYG{n}{weight}\PYG{o}{::}\PYG{k+kt}{Int}           \PYG{c}{\PYGZsh{}weight for each undominated point to determine $\delta$}
+        \PYG{k}{function} \PYG{n}{B\PYGZus{}points}\PYG{p}{(}\PYG{n}{cost}\PYG{o}{::}\PYG{k+kt}{Vector}\PYG{p}{\PYGZob{}}\PYG{k+kt}{Float64}\PYG{p}{\PYGZcb{}}\PYG{p}{,}\PYG{n}{x}\PYG{o}{::}\PYG{k+kt}{Vector}\PYG{p}{\PYGZob{}}\PYG{k+kt}{Float64}\PYG{p}{\PYGZcb{}}\PYG{p}{,} \PYG{n}{w}\PYG{o}{::}\PYG{k+kt}{Int}\PYG{o}{=}\PYG{l+m+mi}{0}\PYG{p}{)} \PYG{c}{\PYGZsh{}inner constructor}
+            \PYG{n}{p} \PYG{o}{=} \PYG{n}{new}\PYG{p}{(}\PYG{p}{)}
+            \PYG{n}{p}\PYG{o}{.}\PYG{n}{cost} \PYG{o}{=} \PYG{n}{cost}
+            \PYG{n}{p}\PYG{o}{.}\PYG{n}{x\PYGZus{}now}\PYG{o}{=}\PYG{n}{x}
+            \PYG{n}{p}\PYG{o}{.}\PYG{n}{weight} \PYG{o}{=} \PYG{n}{w}
+            \PYG{k}{return} \PYG{n}{p}
+        \PYG{k}{end}
+    \PYG{k}{end}
+\end{Verbatim}

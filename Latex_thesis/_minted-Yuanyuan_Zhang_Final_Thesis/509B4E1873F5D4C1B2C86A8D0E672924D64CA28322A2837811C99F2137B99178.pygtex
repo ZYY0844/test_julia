@@ -1,0 +1,8 @@
+\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8}]
+    \PYG{k}{function} \PYG{n}{update\PYGZus{}p}\PYG{p}{(}\PYG{n}{p}\PYG{p}{,} \PYG{n}{p1}\PYG{o}{::}\PYG{n}{DSProblem}\PYG{p}{,} \PYG{n}{p2}\PYG{o}{::}\PYG{n}{DSProblem}\PYG{p}{,} \PYG{n}{status}\PYG{o}{::}\PYG{n}{BiMADS\PYGZus{}status}\PYG{p}{)}
+    \PYG{c}{\PYGZsh{}before Main Iteration Loop}
+    \PYG{k}{end}
+    \PYG{k}{function} \PYG{n}{update\PYGZus{}p}\PYG{p}{(}\PYG{n}{p\PYGZus{}init}\PYG{o}{::}\PYG{n}{DSProblem}\PYG{p}{,} \PYG{n}{p\PYGZus{}reform}\PYG{o}{::}\PYG{n}{DSProblem}\PYG{p}{,} \PYG{n}{status}\PYG{o}{::}\PYG{n}{BiMADS\PYGZus{}status}\PYG{p}{)}
+    \PYG{c}{\PYGZsh{}during Main Iteration Loop}
+    \PYG{k}{end}
+\end{Verbatim}

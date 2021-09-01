@@ -1,0 +1,26 @@
+\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8}]
+  \PYG{l+s}{\PYGZdq{}\PYGZdq{}\PYGZdq{}}
+\PYG{l+s}{ }\PYG{l+s}{ }\PYG{l+s}{S}\PYG{l+s}{t}\PYG{l+s}{a}\PYG{l+s}{t}\PYG{l+s}{u}\PYG{l+s}{s}\PYG{l+s}{ }\PYG{l+s}{f}\PYG{l+s}{o}\PYG{l+s}{r}\PYG{l+s}{ }\PYG{l+s}{B}\PYG{l+s}{i}\PYG{l+s}{M}\PYG{l+s}{A}\PYG{l+s}{D}\PYG{l+s}{S}\PYG{l+s}{ }\PYG{l+s}{m}\PYG{l+s}{a}\PYG{l+s}{i}\PYG{l+s}{n}\PYG{l+s}{ }\PYG{l+s}{i}\PYG{l+s}{t}\PYG{l+s}{e}\PYG{l+s}{r}\PYG{l+s}{a}\PYG{l+s}{t}\PYG{l+s}{i}\PYG{l+s}{o}\PYG{l+s}{n}\PYG{l+s}{,}\PYG{l+s}{ }\PYG{l+s}{a}\PYG{l+s}{l}\PYG{l+s}{s}\PYG{l+s}{o}\PYG{l+s}{ }\PYG{l+s}{c}\PYG{l+s}{o}\PYG{l+s}{n}\PYG{l+s}{t}\PYG{l+s}{a}\PYG{l+s}{i}\PYG{l+s}{n}\PYG{l+s}{ }\PYG{l+s}{s}\PYG{l+s}{t}\PYG{l+s}{o}\PYG{l+s}{p}\PYG{l+s}{p}\PYG{l+s}{i}\PYG{l+s}{n}\PYG{l+s}{g}\PYG{l+s}{ }\PYG{l+s}{c}\PYG{l+s}{o}\PYG{l+s}{n}\PYG{l+s}{d}\PYG{l+s}{i}\PYG{l+s}{t}\PYG{l+s}{i}\PYG{l+s}{o}\PYG{l+s}{n}\PYG{l+s}{s}
+
+\PYG{l+s}{ }\PYG{l+s}{ }\PYG{l+s}{\PYGZdq{}\PYGZdq{}\PYGZdq{}}
+  \PYG{k}{mutable} \PYG{k}{struct} \PYG{n}{BiMADS\PYGZus{}status}
+    \PYG{n}{iteration}\PYG{o}{::}\PYG{k+kt}{Int64}                \PYG{c}{\PYGZsh{}Total iteration spent}
+    \PYG{n}{func\PYGZus{}evaluation}\PYG{o}{::}\PYG{k+kt}{Int64}          \PYG{c}{\PYGZsh{}Total function evaluation spent}
+    \PYG{n}{total\PYGZus{}time}\PYG{o}{::}\PYG{k+kt}{Float64}             \PYG{c}{\PYGZsh{}Total running time}
+    \PYG{n}{hypervolume}\PYG{o}{::}\PYG{k+kt}{Float64}            \PYG{c}{\PYGZsh{}Hypervolume for current Pareto set}
+    \PYG{n}{opt\PYGZus{}status}\PYG{o}{::}\PYG{n}{OptimizationStatus}  \PYG{c}{\PYGZsh{}one of the stopping condition}
+    \PYG{n}{opt\PYGZus{}string}\PYG{o}{::}\PYG{n}{String}              \PYG{c}{\PYGZsh{}string for the condition above}
+    \PYG{n}{start\PYGZus{}time}\PYG{o}{::}\PYG{k+kt}{Float64}             \PYG{c}{\PYGZsh{}start time for the optimization}
+    \PYG{k}{function} \PYG{n}{BiMADS\PYGZus{}status}\PYG{p}{(}\PYG{p}{)}        \PYG{c}{\PYGZsh{}inner constructor}
+        \PYG{n}{s}\PYG{o}{=}\PYG{n}{new}\PYG{p}{(}\PYG{p}{)}
+        \PYG{n}{s}\PYG{o}{.}\PYG{n}{iteration}\PYG{o}{=}\PYG{l+m+mi}{0}
+        \PYG{n}{s}\PYG{o}{.}\PYG{n}{func\PYGZus{}evaluation}\PYG{o}{=}\PYG{l+m+mi}{0}
+        \PYG{n}{s}\PYG{o}{.}\PYG{n}{total\PYGZus{}time}\PYG{o}{=}\PYG{l+m+mf}{0.0}
+        \PYG{n}{s}\PYG{o}{.}\PYG{n}{hypervolume}\PYG{o}{=}\PYG{l+m+mf}{0.0}
+        \PYG{n}{s}\PYG{o}{.}\PYG{n}{opt\PYGZus{}status}\PYG{o}{=}\PYG{n}{Unoptimized}
+        \PYG{n}{s}\PYG{o}{.}\PYG{n}{opt\PYGZus{}string}\PYG{o}{=}\PYG{l+s}{\PYGZdq{}}\PYG{l+s}{U}\PYG{l+s}{n}\PYG{l+s}{o}\PYG{l+s}{p}\PYG{l+s}{t}\PYG{l+s}{i}\PYG{l+s}{m}\PYG{l+s}{i}\PYG{l+s}{z}\PYG{l+s}{e}\PYG{l+s}{d}\PYG{l+s}{\PYGZdq{}}
+        \PYG{n}{s}\PYG{o}{.}\PYG{n}{start\PYGZus{}time}\PYG{o}{=}\PYG{n}{time}\PYG{p}{(}\PYG{p}{)}
+        \PYG{k}{return} \PYG{n}{s}
+    \PYG{k}{end}
+  \PYG{k}{end}
+\end{Verbatim}

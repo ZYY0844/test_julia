@@ -1,0 +1,7 @@
+\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8}]
+  \PYG{k}{function} \PYG{n}{obj}\PYG{p}{(}\PYG{n}{x}\PYG{p}{)}
+      \PYG{n}{f1}\PYG{p}{(}\PYG{n}{x}\PYG{p}{)} \PYG{o}{=} \PYG{o}{.}\PYG{o}{.}\PYG{o}{.}
+      \PYG{n}{f2}\PYG{p}{(}\PYG{n}{x}\PYG{p}{)} \PYG{o}{=} \PYG{o}{.}\PYG{o}{.}\PYG{o}{.}
+      \PYG{k}{return} \PYG{p}{[}\PYG{n}{f1}\PYG{p}{,}\PYG{n}{f2}\PYG{p}{]}
+  \PYG{k}{end}
+\end{Verbatim}
